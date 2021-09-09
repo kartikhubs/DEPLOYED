@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arts quiz</title>
+</head>
+<style>
+  body{
+    font-family:Arial,Helvitica,sans-serif;
+    background-image:url("cyan.jpg");
+    background-size:cover;
+    background-attachment:scroll;
+  }
+  nav{
+    width:auto;
+    background-color:yellow;
+    color:black;
+    padding:7px 7px;
+    box-shadow:0px 5px 7px 5px grey;
+    text-align:left;
+    opacity:0.8;
+  }
+  a{
+    margin:7px;
+    text-decoration:none;
+    position:relative;
+  }
+  a:hover{
+    text-decoration:none;
+    color:red;
+}
+input[type=submit]{
+  width:50px;
+  background-color:blue;
+  height:30px;
+  border:none;
+  outline:none;
+  color:white;
+  transition:0.2s background-color;
+  border-radius:4px;
+}
+input[type=submit]:hover{
+  background-color:green;
+
+  transition-timing-function:ease-in;
+}
+button{
+  width:60px;
+  background-color:red;
+  height:30px;
+  border:none;
+  outline:none;
+  color:white;
+  transition:0.2s background-color;
+  border-radius:4px;
+
+}
+button:hover{
+  background-color:yellow;
+  color:black;
+  transition-timing-function:ease-in;
+}
+</style>
+<body>
+  <nav>
+    <a href="" style="margin-left:15px;"><strong><i>MAVEN</i></strong></a>
+    <a href="" style="margin-left:15px;">ABOUT US</a>
+    <a href="" style="margin-left:15px;">CONTACT US</a>
+
+    <a href="loginpage.html" style="float:right;margin-right:17px;top:-5px;font-weight:bold;">LOG-OUT</a>
+  </nav><br>
+  <img src="maven2.png" width="90px" height="90px">
+  <p style="font-family:Lucida Console,Monospace;font-size:15px;color:black;">INCUBATING BRAINS</p><br>
+  <center><h3 style="position:absolute;top:60px;left:240px;">THIS IS JUST AN ASSESSMENT TO CHECK WHETHER YOU HAVE KNOWLEDGE OF PARTICULAR STREAM OR NOT?</h3></center>
+  <span style="top:150px;position:absolute;left:1350px;"><i><b>MAX MARKS:5</b></i></span>
+  <p><b>1.Which among the following kings was also known as Mamallan(wrestler)?</B></P>
+  <input type="radio" id="name" name="choice">
+  <b>Pulakesi the second<b>
+  <br><br>
+  <input type="radio" id="name1" name="choice">
+  <b>Mahendravarman the first<b><br><br>
+  <input type="radio" id="name2" name="choice">
+  <b>Narasimhavarman the first<b><br><br>
+  <input type="radio" id="name3" name="choice">
+  <b>NOTA<b><br><br>
+  <input type="submit" onclick="check()" value="submit">
+  <br>
+  <p>2.Where and when was the second Buddhist council held?</p>
+  <input type="radio" id="ans" name="choice">
+  <b>Patliputra in 250 bc<b><br><br>
+  <input type="radio" id="ans1" name="choice">
+  <b>Sri Lanka in 1st century BCE</b><br><br>
+  <input type="radio" id="ans2" name="choice">
+  <b>Vaishali in 383 bc<b><br><br>
+  <input type="radio" id="ans3" name="choice">
+  <b>Mandalay in 1871 ad<b><br><br>
+  <input type="submit" onclick="check1()" value="submit">
+  <br>
+  <p>3.Which freedom fighter formed the Bharat Naujawan Sabha?</P>
+  <input type="radio" id="a" name="choice">
+  <b>Bhagat Singh</b><br><br>
+  <input type="radio" id="a1" name="choice">
+  <b>MK Gandhi</b><br><br>
+  <input type="radio" id="a2" name="choice">
+  <b>Sukhdev</b><br><br>
+  <input type="radio" id="a3" name="choice">
+  <b>Surya Sen</B><br><br>
+  <input type="submit" onclick="check2()" value="submit">
+  <br>
+  <p>4.Which one of the following was the far western settlement of Harappan culture?</P>
+  <input type="radio" id="z" name="choice">
+  <b>Nal<b><br><br>
+  <input type="radio" id="z1" name="choice">
+  <b>Sutkagendor<b><br><br>
+  <input type="radio" id="z2" name="choice">
+  <b>Rangpur<b><br><br>
+  <input type="radio" id="z3" name="choice">
+  <b>Kotdiji<b><br><br>
+  <input type="submit" onclick="check3()" value="submit">
+  <br>
+  <p>5.Qutub Minar was not repaired by which ruler?</p>
+  <input type="radio" id="w" name="choice">
+  <b>Muhammad Tughluq<b><br><br>
+  <input type="radio" id="w1" name="choice">
+  <b>Feroz Shah Tughluq<b><br><br>
+  <input type="radio" id="w2" name="choice">
+  <b>Sikandar Lodhi<b><br><br>
+  <input type="radio" id="w3" name="choice">
+  <b>Ibrahim Lodhi<b><br><br>
+  <input type="submit" onclick="check4()" value="submit"><br>
+  <p>6.What is the % of reservation in Rajya Sabha</p>
+  <input type="radio" id="f" name="choice">
+  <b>0%<b><br><br>
+  <input type="radio" id="f1" name="choice">
+  <b>4%<b><br><br>
+  <input type="radio" id="f2" name="choice">
+  <b>5%<b><br><br>
+  <input type="radio" id="f3" name="choice">
+  <b>100%<b><br><br>
+  <input type="submit" onclick="check5()" value="submit"><br>
+  <p>7.Who has the given ideal thoery of bureaucracy?</p>
+  <input type="radio" id="g" name="choice">
+  <b>Max Weber<b><br><br>
+  <input type="radio" id="g1" name="choice">
+  <b>A.O Hume<b><br><br>
+  <input type="radio" id="g2" name="choice">
+  <b>Sardar Vallabbhai Patel<b><br><br>
+  <input type="radio" id="g3" name="choice">
+  <b>MK Gandhi<b><br><br>
+  <input type="submit" onclick="check6()" value="submit"><br>
+  <p>8.The percentage of irrigated land in India is about?</p>
+  <input type="radio" id="h" name="choice">
+  <b>45<b><br><br>
+  <input type="radio" id="h1" name="choice">
+  <b>65<b><br><br>
+  <input type="radio" id="h2" name="choice">
+  <b>35<b><br><br>
+  <input type="radio" id="h3" name="choice">
+  <b>25<b><br><br>
+  <input type="submit" onclick="check7()" value="submit"><br>
+  <p>9.What is the relationship between demand and price?</p>
+  <input type="radio" id="u" name="choice">
+  <b>Direct<b><br><br>
+  <input type="radio" id="u1" name="choice">
+  <b>No relation<b><br><br>
+  <input type="radio" id="u2" name="choice">
+  <b>Inverse<b><br><br>
+  <input type="radio" id="u3" name="choice">
+  <b>Both are same<b><br><br>
+  <input type="submit" onclick="check8()" value="submit"><br>
+  <p>10.Who is the father of Economics?</p>
+  <input type="radio" id="i" name="choice">
+  <b>Adam Smith<b><br><br>
+  <input type="radio" id="i1" name="choice">
+  <b>Milton Fredman<b><br><br>
+  <input type="radio" id="i2" name="choice">
+  <b>Thomas Sowell<b><br><br>
+  <input type="radio" id="i3" name="choice">
+  <b>Robert J.Shiller<b><br><br>
+  <input type="submit" onclick="check9()" value="submit"><br>
+  <center><button onclick="analyze()">CHECK</button></center>
+
+
+  <script>
+    var count1=0;
+    var count2=0;
+    var count3=0;
+    var count4=0;
+    var count5=0;
+    var count6=0;
+    var count7=0;
+    var count8=0;
+    var count9=0;
+    var count10=0;
+    function check(){
+      if(document.getElementById("name2").checked){
+
+        count1=1;
+      }
+      else{
+
+        count1=0;
+      }
+    }
+    function check1(){
+      if(document.getElementById("ans2").checked){
+        count2=1;
+      }
+
+    else{
+      count2=0;
+    }
+  }
+  function check2(){
+    if(document.getElementById("a").checked){
+      count3=1;
+    }
+
+  else{
+    count3=0;
+  }
+}
+function check3(){
+  if(document.getElementById("z1").checked){
+    count4=1;
+  }
+
+else{
+ count4=0;
+}
+}
+function check4(){
+  if(document.getElementById("w3").checked){
+    count5=1;
+  }
+
+else{
+  count5=0;
+}
+}
+function check5(){
+  if(document.getElementById("f").checked){
+    count6=1;
+  }
+
+else{
+  count6=0;
+}
+}
+function check6(){
+  if(document.getElementById("g").checked){
+    count7=1;
+  }
+
+else{
+  count7=0;
+}
+}
+function check7(){
+  if(document.getElementById("h3").checked){
+    count8=1;
+  }
+
+else{
+  count8=0;
+}
+}
+function check8(){
+  if(document.getElementById("u2").checked){
+    count9=1;
+  }
+
+else{
+  count9=0;
+}
+}
+function check9(){
+  if(document.getElementById("i").checked){
+    count10=1;
+  }
+
+else{
+  count10=0;
+}
+}
+function analyze(){
+
+var x=count1+count2+count3+count4+count5+count6+count7+count8+count9+count10;
+if(x<5){
+  alert("Sorry, you didn't score even 50%, retake the test");
+  window.location.href="expertpage.html";
+}
+else{
+  alert("You have cleared the test");
+}}
+
+
+  </script>
+</body>
+</html>

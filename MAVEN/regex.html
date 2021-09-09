@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+   <title>REGEX</title>
+</head>
+<body>
+    <form method="post">
+    <b>EMAIL:</b>
+    <input type="text" id="mytext">
+    <button onclick="myfunc()">CLICK</form>
+    <script>
+      function myfunc(){
+               var a=document.getElementById("mytext").value;
+               var pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$";
+               var regex=new RegExp(pattern);
+               if(regex.test(a)){
+                        alert("VALID");}
+               else{
+                        alert("NOT");}}
+    </script>
+</body>
+</html>
+          

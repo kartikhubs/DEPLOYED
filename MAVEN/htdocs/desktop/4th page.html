@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<title>Fourth page</title>
+<style>
+  body{
+        font-family:Arial,Helvitica,sans-serif;
+        background-image:linear-gradient(100deg,cyan,blue);
+      }
+.topnav{
+  background-color: pink;
+}
+.prev,.next{
+ cursor:pointer;
+ position:absolute;
+ top:50%;
+ width: auto;
+ padding: 16px;
+ margin-top: -22px;
+ color: white;
+ font-weight: bold;
+ font-size: 18px;
+ transition: 0.6s ease;
+ border-radius: 0 3px 3px 0;
+ user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.topnav kartik
+{
+   float: left;
+   padding: 14px 17px;
+   color: blue;
+   display: block;
+}
+.topnav kartik:hover{
+  background-color: cyan;
+  color: black;
+}
+a{
+  text-decoration: none;
+  display:inline-block;
+  padding:8px 16px;
+}
+a:hover{
+  background-color: cyan;
+  color: black;
+}
+.content{
+  background-color: white;
+  opacity:0.8;
+  max-width:500px;
+  float:centered;
+  text-align:center;
+  
+  padding:2px 10px;
+}
+input[type=text]
+{
+  width:35%;
+  box-sizing:border-box;
+  padding:5px 7px;
+}
+input[type=date]
+{
+  width:35%;
+  box-sizing:border-box;
+  padding:5px 7px;
+}
+input[type=submit]
+{
+  width:100%;
+  box-sizing:border-box;
+  padding:5px 7px;
+}
+</style>
+</head>
+<body>
+    <div class="topnav">
+      <a href="http://www.google.co.in">Google</a>
+      <a href="http://www.w3schools.com">School</a>
+      <a href="http://www.tutorialspoint.com">Learn</a>
+    </div>
+   <h2 style="color:yellow;"><b><i>KARTIKPAYZZ</i></b></h2>
+   <center>
+   <div class="content">
+    <form action="wallet.php" method="post"><br>
+       <b>PAY INVOICE</b>
+   <br><br><br>
+   <p><b>Amount:</b>
+   <input type="text" name="amount" required></p>
+   <br>
+   <p><b>Transfer to:</b>
+   <input type="text" name="callee" required></p>
+   <br>
+   <p><b>Transfer from:</b>
+   <input type="text" name="caller" required></p>
+   <br>
+ 
+   <p><b>Transaction date:</b>
+   <input type="date" name="transdate" required>
+   </b></p>
+   <br>
+   <p><b>Wallet limit:</b>
+   <input type="text" name="limit" required>
+   </p>
+   <br>
+   <h4><b>Choose Platform</b></h4>
+   
+   <input type="submit" value="PayTm">
+      
+   </div></center>
+     
+     <a class="prev" onclick="plusSlides(-1)"><</a>
+  
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+	 <title>BACKDROP</title>
+</head>
+<style>
+	body{
+		font-family:Lucida Console,Monospace;
+	
+
+	}
+	img{
+		-webkit-filter:blur(5px);
+		filter:blur(5px);
+	}
+.content{
+	max-width:500px;
+	width:800px;
+	padding:8px 14px;
+	opacity:0.8;
+	z-index:2;
+	position:absolute;
+	top:200px;
+	left:500px;
+	background-color:white;
+	color:black;
+	text-align:left;
+}
+input[type=text]{
+	width:200px;
+	transition:width 1s;
+	padding:6px 8px;
+	box-sizing:border-box;
+
+}
+input[type=email]{
+	width:200px;
+	transition:width 1s;
+	padding:6px 8px;
+	box-sizing:border-box;
+	border-style:outset;
+	border-width:1px;
+}
+input[type=password]{
+	width:200px;
+	transition:width 1s;
+	padding:6px 8px;
+	box-sizing:border-box;
+	border-style:none;
+}
+input[type=text]:focus{
+	width:250px;
+	transition-timing-function:ease-in-out;
+	 -webkit-box-shadow: 3px 1px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 1px 3px 6px blue;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0.8px 1px 3px 6px blue;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+input[type=email]:focus{
+	width:350px;
+	transition-timing-function:ease-in-out;
+	box-shadow:3px 3px 3px 3px green;
+	 -webkit-box-shadow: 3px 1px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 1px 3px 6px blue;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0.8px 1px 3px 6px blue;  
+
+}
+input[type=password]:focus{
+	width:350px;
+	transition-timing-function:ease-in-out;
+	box-shadow:3px 3px 3px 3px green;
+	 -webkit-box-shadow: 3px 1px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 1px 3px 6px blue;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0.8px 1px 3px 6px blue;  
+}
+input[type=submit]{
+	width:200px;
+	padding:6px 8px;
+	
+	border-width:0px;
+	border-radius:10px;
+}
+	
+		
+
+	
+
+</style>
+<body>
+	<img src="windows.jpg" width="1500px" height="800px">
+	<div class="content"><br>
+	<form method="POST" action="http://www.google.co.in">
+		<strong>USERNAME:</strong>
+		<input type="text" name="uname"><br><br>
+		<strong>EMAIL:</strong>
+		<input type="email" name="email"><br><br>
+		<strong>PASSWORD:</strong>
+		<input type="password" name="pass"><br><br>
+		<center><input type="submit" value="PROCEED"></center></form></div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style>
+Body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url('career-leadership-success-businessman.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+nav{
+  width:auto;
+  background-color:yellow;
+  color:black;
+  padding:7px 7px;
+  box-shadow:0px 5px 7px 5px grey;
+  text-align:left;
+  opacity:0.8;
+}
+a{
+  margin:7px;
+  text-decoration:none;
+  position:relative;
+}
+a:hover{
+  text-decoration:none;
+  color:red;
+
+
+}
+
+button1 {
+       background-color:#32CD32;
+       width: 150%;
+       font-size:25px;
+        color:#fff;
+        padding: 10px;
+        margin: 10px 5px;
+        border-radius:20px;
+        cursor: pointer;
+         }
+
+button2 {
+       background-color:#ff0000;
+       width: 150%;
+       font-size:25px;
+        color:#fff;
+        padding: 10px;
+        margin: 10px 5px;
+        border-radius:20px;
+        cursor: pointer;
+         }
+ input[type=text],input[type=password] {
+        width: 45%;
+        margin: 10px 0;
+        padding: 15px 20px;
+        display: block;
+        border: 2px solid green;
+        box-sizing: border-box;
+    }
+    button[type=submit]{
+      background-color:green;
+      color:white;
+      width:100px;
+      padding:20px;
+      border:0px;
+      border-radius:3px;
+      margin:10px;
+    }
+    button[type=reset]{
+      background-color:red;
+      color:white;
+      width:100px;
+      padding:20px;
+      border:0px;
+      border-radius:3px;
+    }
+ button:hover {
+        opacity: 0.7;
+    }
+
+   .container {
+     width:400px;
+     overflow: hidden;
+     margin: auto;
+     position:absolute;
+     padding: 70px;
+     background-color:white;
+     border-radius: 15px;
+     left:490px;
+     top:230px;
+     opacity:0.9;
+     box-shadow:0px 0px 5px 5px green;
+
+    }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="" style="margin-left:15px;"><strong><i>MAVEN</i></strong></a>
+    <a href="" style="margin-left:15px;">ABOUT US</a>
+    <a href="" style="margin-left:15px;">CONTACT US</a>
+
+    <a href="signupc.html" style="float:right;margin-right:17px;top:-5px;font-weight:bold;">SIGN-UP</a>
+  </nav><br>
+
+  <img src="maven2.png" width="90px" height="90px">
+  <p style="font-family:Lucida Console,Monospace;font-size:15px;color:black;">INCUBATING BRAINS</p>
+  <h2 style="color:blue;position:absolute;top:70px;margin-left:620px;">USER LOGIN PORTAL</h2>
+    <form action="afterlogin.html" method="POST">
+       <div class="container">
+
+            <label style="font-weight:700;">Username : </label>
+            <input type="text" placeholder="Enter Username" autocomplete="off" name="username" required>
+            <label style="font-weight:700;">Password : </label>
+            <input type="password" placeholder="Enter Password" id="code" autocomplete="off" name="password" required>
+            <input type="checkbox" id="check" onclick="toggle()">
+            <b>Show Password</b><br><br>
+
+            <input type="checkbox" checked="checked">
+            <b>Remember me</b><br><br>
+            <button type="submit" id="button1">LOGIN</button>
+            <button type="reset" id="button2"> CANCEL</button>
+
+        </div>
+    </form>
+    <script>
+    function toggle(){
+      var x=document.getElementById("code");
+      if(x.type==="password"){
+        x.type="text";
+      }
+      else{
+        x.type="password";
+      }
+    }
+    </script>
+</body>
+</html>

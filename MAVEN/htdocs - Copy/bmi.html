@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RETURNBMI</title>
+</head>
+<body>
+	<form name="myform">
+		<strong>HEIGHT(m):</strong>
+		<input type="number" step="0.01" name="height"><br><br>
+		<strong>WEIGHT:</strong>
+		<input type="number" step="0.01" name="weight"><br><br>
+		<input type="submit" value="GO" onclick="bmi()"><br><br>
+		<strong>RESULT:</strong>
+		<input type="number"  step="0.000000001" id="kartik" name="result">
+	</form>
+	<script>
+		function bmi()
+		{
+			var x=document.myform.height.value;
+			var y=document.myform.weight.value;
+
+			var z=(y/(x*x));
+			document.getElementById("kartik").value=z;
+			
+
+			
+		}
+	</script>
+</body>
+</html>

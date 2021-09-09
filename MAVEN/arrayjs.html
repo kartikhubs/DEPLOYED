@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ARRAY TESTING</title>
+</head>
+<body>
+	<h2>FRUITS ARE:</h2>
+	<button onclick="show()">CLICK</button> 
+	<h2>WHICH FRUITS YOU WANT TO ADD?</h2>
+	<button onclick="add()">ADD</button>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<script>
+		var fruits=['Kiwi','Orange','Pear'];
+		function show(){
+			var i;
+			for(i=0;i<fruits.length;i++){
+
+              document.getElementById("demo").innerHTML+=fruits[i].toString();}
+		}
+		function add(){
+			var add=prompt("ENTER FRUITS");
+			fruits+=','+add;
+			document.getElementById("demo1").innerHTML+=fruits;
+		}
+	</script> 
+</body>
+</html>

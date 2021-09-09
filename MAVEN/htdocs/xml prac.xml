@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="catalog.xsl" ?>
+<catalog>
+   <CD>
+	 <name>KARTIK</name>
+	 <country>INDIA</country>
+	 <work>STUDENT</work>
+   </CD>
+   <CD>
+   	 <name>NAMAN</name>
+   	 <country>INDIA</country>
+   	 <work>STUDENT</work>
+   </CD>
+   <CD>
+   	 <name>NAMRATA</name>
+   	 <country>INDIA</country>
+   	 <work>STUDENT</work>
+   </CD>
+   <CD>
+   	 <name>JIGYASA</name>
+   	 <country>INDIA</country>
+   	 <work>STUDENT</work>
+   </CD>
+</catalog>

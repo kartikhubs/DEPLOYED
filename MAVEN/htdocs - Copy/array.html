@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>FRUITSWALA</title>
+</head> 
+<body>
+	<h2>THIS IS A FRUIT ARRAY</h2>
+	<button onclick="fruit()">CLICK ON THIS</button>
+	<p id="demo"></p>
+	<script>
+		function fruit(){
+			var x=["MANGO","KIWI","ORANGE","APPLES","PINEAPPLE","PEARS"];
+			for(var t in x){
+				document.getElementById("demo").innerHTML+=x[t]+',';
+			}
+		}
+	</script>
+</body> 
+</html>

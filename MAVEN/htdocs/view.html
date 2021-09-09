@@ -1,0 +1,29 @@
+<?php 
+    $conn=mysqli_connect('localhost','root','','vivo');
+    $conn1=mysqli_connect('localhost','root','','kbc');
+    
+    
+
+    $session=$_POST['sess'];
+    $college=$_POST['college'];
+    $stock1=$_POST['stock1'];
+    $stock2=$_POST['sub2'];
+    $issue=$_POST['issue'];
+
+    $sql="INSERT into y5(SESSION,COLLEGE,STOCK1,STOCK2,ISSUED) values ('$session','$college','$stock1','$stock2','$issue')";
+   
+    $select1="SELECT * from y5";
+
+    $select="SELECT *  from sony";
+    if(!mysqli_query($conn,$sql)){
+    	echo "NOT INSERTED";
+    }
+    else{
+    	echo "INSERTED";
+    }
+    $result=mysqli_query($conn1,$select);
+    $result1=mysqli_fetch_assoc($result);
+    $result2=mysqli_query($conn,$select1);
+    $result3=mysqli_fetch_assoc($result2);
+    $last=mysqli_info($conn1);
+    echo $last;?>

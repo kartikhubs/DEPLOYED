@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>THIRD PAGE</title>
+</head>
+<style>
+	body{
+		font-family:Lucida Console,Monospace;
+		background-image:url("store2.png");
+		background-repeat:no-repeat;
+		background-size:1700px 1000px;
+	
+	}
+	.content{
+		max-width:600px;
+		width:600px;
+		opacity:0.8;
+		background-color:white;
+		color:black;
+		position:absolute;
+		top:200px;
+		left:450px;
+		text-align:left;
+		padding:8px 14px;
+		outline-style:solid;
+		outline-color:red;
+		outline-width:3px;
+		z-index:5;
+	}
+	input[type=text]{
+		width:300px;
+		transition:width 1s;
+		box-sizing:border-box;
+		border-radius:12px;
+		padding:8px 8px;
+	}
+	input[type=date]{
+		width:300px;
+		transition:width 1s;
+		box-sizing:border-box;
+		border-radius:12px;
+		padding:8px 8px;
+
+	}
+	input[type=submit]
+	{
+		background-color:yellow;
+		border-radius:12px;
+		color:black;
+		border-width:0px;
+	}
+	input[type=submit]:hover{
+		background-color:red;
+		color:white;
+		width:100px;
+	}
+	button[type=reset]{
+		background-color:yellow;
+		border-radius:12px;
+		color:black;
+		border-width:0px;
+ 
+	}
+	button[type=reset]:hover{
+		background-color:red;
+		color:white;
+		width:100px;
+	}
+	input[type=number]{
+		width:70px;
+		transition:width 1s;
+		box-sizing:border-box;
+		border-radius:12px;
+		padding:8px 8px;
+
+	}
+	input[type=text]:focus{
+		width:350px;
+		transition-timing-function:ease-in-out;
+		background-color:rgb(115,195,108);
+		color:white;
+
+	}
+	input[type=date]:focus{
+		width:320px;
+		transition-timing-function:ease-in-out;
+		background-color:rgb(115,195,108);
+		color:white;
+
+	}
+	button[type=button]{
+		background-color:yellow;
+		border-radius:12px;
+		color:black;
+		border-width:0px;
+	}
+	button[type=button]:hover{
+		background-color:red;
+		color:white;
+		width:100px;
+	}
+	input[type=number]:focus{
+		width:90px;
+		transition-timing-function:ease-in-out;
+		background-color:rgb(115,195,108);
+		color:white;
+
+
+	}
+	
+</style> 
+<body>
+	<script>
+var carsAndModels = {};
+
+carsAndModels['Ceiling Fan'] = ['','Fan white','Fan brown','Fan regulator','Fan box'];
+carsAndModels['Tubelights'] = ['','Putty','Rod','Choke','Holder','Starter'];
+carsAndModels['Switches'] = ['','6amp','16amp','6amp moduler','16amp moduler'];
+carsAndModels['Pvc Pipe']=['','2.5 crown 1 inch','2.5 crown 0.5 inch','2.5 crown 3/4 inch'];
+carsAndModels['Wire']=['','.75mm','1mm','2.5mm','4mm','6mm','10mm'];
+carsAndModels['CFL']=['','9watt LED','18watt LED'];
+carsAndModels['Mica Sheet']=['','7*4 sheet','9*11 sheet','11*13 sheet'];
+carsAndModels['Duct Motor']=['','36inch','24inch','18inch cooler','15inch cooler','12inch cooler','9inch cooler'];
+carsAndModels['MCB']=['','6amp','10amp','16amp','20amp','25amp','32amp'];
+carsAndModels['TPN']=['','32amp','25amp','63amp','100amp'];
+carsAndModels['Energy Motor']=['','Single Phase','Three Phase'];
+carsAndModels['3Pin Top']=['','6amp','16amp'];
+carsAndModels['Cooler Pump']=['','6ft','10ft'];
+carsAndModels['Holder']=['','Angle','Baton','Black','T/I holder','150 M/H holder','400 M/H holder'];
+carsAndModels['Condenser']=['','2.5fan','3.15fan','4mfd','6mfd','8mfd','10mfd','20mfd','42mfd','60-80 capacitor','80-200 capacitor','100-120 capacitor','100-150 capacitor','m/h ignitor'];
+carsAndModels['Pvc Board']=['','single switch+socket box','6*8 pvc','8*10 pvc','10*12 pvc','power'];
+carsAndModels['Upvc Tee']=['','1/2 inch','1 inch','1*1/4 inch'];
+carsAndModels['Upvc Brass Tee']=['','1/2 inch','1 inch','1*1/4 inch','1*1/2 inch'];
+carsAndModels['Upvc Alvo']=['','1/2 inch','1*1/2 inch','1 inch','1*1/4 inch','2 inch'];
+carsAndModels['Upvc end cap']=['','1/2 inch','1 inch','1*1/4 inch','1*1/2 inch','2 inch'];
+carsAndModels['Upvc Gate valve']=['','1/2 inch','1 inch','1*1/4 inch','1*1/2 inch'];
+carsAndModels['Upvc Pipe']=['','1/2 inch','1 inch','1*1/4 inch','1*1/2 inch'];
+carsAndModels['F.A.B.T']=['','1/2 inch','1 inch','1*1/4 inch','1*1/2 inch'];
+carsAndModels['M.A.B.T']=['','1/2 inch','1 inch','1*1/4 inch','1*1/2 inch'];
+carsAndModels['Nozzel']=['','1/2 inch','1 inch'];
+carsAndModels['Upvc reducer']=['','1*1/2 inch','1*1/4*1/2 inch','2*1/2 inch'];
+carsAndModels['Upvc Union']=['','1 inch','1/2 inch','1*1/4 inch','1*1/2 inch'];
+carsAndModels['Tank connection']=['','1/2 inch','1 inch','1*1/4 inch','1*1/2 inch'];
+carsAndModels['Flood boll']=['','1/2 inch','1 inch','cistern','1/2 inch tank'];
+carsAndModels['G I union']=['','1/2 inch','1*1/4 inch','1*1/2 inch','2 inch'];
+carsAndModels['G I socket']=['','1/2 inch','1/2*1 inch','1 inch','1*1/4 inch','2 inch'];
+carsAndModels['G I Tee']=['','1/2 inch','1 inch','1*1/4 inch','1*1/2 inch','2 inch'];
+carsAndModels['Pvc Alvo']=['','1 inch','1*1/4 inch','1*1/2 inch','2 inch','3 inch','4 inch'];
+carsAndModels['Upvc Brass Alvo']=['','1/2 inch','1*1/2 inch','1 inch'];
+
+function ChangeCarList() {
+  var carList = document.getElementById("stock1");
+  var modelList = document.getElementById("sub2");
+  var selCar = carList.options[carList.selectedIndex].value;
+  while (modelList.options.length) {
+    modelList.remove(0);
+  }
+  var cars = carsAndModels[selCar];
+  if (cars) {
+    var i;
+    for (i = 0; i < cars.length; i++) {
+      var car = new Option(cars[i], i);
+      modelList.options.add(car);
+    }
+  }
+}
+
+ </script>
+	<center><h1 style="color:cyan;">ADD THE SUB-CATEGORIES(2)</h1></center>
+		
+		<div class="content">
+			<img src="ggits.png" style="margin-left:240px;" width="100px" height="100px">
+			<form method="post" action="table3.php">
+			
+		    <strong>SERIAL NO:</strong>
+		    <input type="number" name="serial" autocomplete="off" required><br><br>
+			<strong>SESSION:</strong>
+			<input type="text" name="sess" placeholder="Enter session" autocomplete="off" required><br><br>
+			<strong>COLLEGE NAME:</strong>
+			<input type="text" name="college" placeholder="Mention college" autocomplete="off" required><br><br>
+            
+			 
+		
+		    
+		    <strong>ENTER SUB-CATEGORY1:</strong>
+		    <select id="stock1" name="stock1" onchange="ChangeCarList()" required>
+		    	<option value=""></option>
+		    	<option value="Ceiling Fan">Ceiling Fan</option>
+		    	<option value="Tubelights">Tubelights</option>
+		    	<option value="Switches">Switches</option>
+		    	<option value="Pvc Board">Pvc Board</option>
+		    	<option value="Wire">Wire</option>
+		    	<option value="CFL">CFL</option>
+		    	<option value="Cooler Pump">Cooler Pump</option>
+		    	<option value="Duct Motor">Duct Motor</option>
+		    	<option value="Mica Sheet">Mica Sheet</option>
+		    	<option value="Holder">Holder</option>
+		    	<option value="MCB">MCB</option>
+		    	<option value="TPN">TPN</option>
+		    	<option value="Condenser">Condenser</option>
+		    	<option value="Pvc Pipe">Pvc Pipe</option>
+		    	<option value="Energy Motor">Energy Motor</option>
+		    	<option value="3Pin Top">3Pin Top</option>
+		    	<option value="Upvc Tee">Upvc Tee</option>
+		    	<option value="Upvc Brass Tee">Upvc Brass Tee</option>
+                <option value="Upvc Brass Alvo">Upvc Brass Alvo</option>
+		    	<option value="Upvc Pipe">Upvc Pipe</option>
+		    	<option value="Upvc Gate valve">Upvc Gate valve</option>
+		    	<option value="F.A.B.T">F.A.B.T</option>
+		    	<option value="M.A.B.T">M.A.B.T</option>
+		    	<option value="Pvc Alvo">Pvc Alvo</option>
+		    	<option value="G I union">G I union</option>
+		    	<option value="G I socket">G I socket</option>
+		    	<option value="G I Tee">G I tee</option>
+		        <option value="Flood boll">Flood boll</option>
+                <option value="Upvc end cap">Upvc end cap</option>
+		        <option value="Tank connection">Upvc Tee</option>
+		        <option value="Upvc reducer">Upvc reducer</option>
+		        <option value="Upvc Union">Upvc union</option>
+		        <option value="Nozzel">Nozzel</option>
+
+
+		    </select><br><br>
+		    <strong>ENTER SUB-CATEGORY2:</strong>
+		    <select  id="sub2" name="sub2" required>
+		    	<option value=""></option>
+		    	
+		    </select><br><br>
+		    <strong>QUANTITY:</strong>
+		    <input type="number" name="quant" min="0" max="50" autocomplete="off" required><br><br>
+		    
+
+		    
+			
+			<center><input type="submit" value="ADD"></center><br>
+			<center><button type="reset">CANCEL</button></center><br>
+			<center><a href="grid3.php"><button type="button">SHOW GRID</button></a></center><br>
+			
+			
+		</form>
+</div>
+</body>
+</html>
+		    
+

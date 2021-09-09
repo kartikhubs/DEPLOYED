@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pcm quiz</title>
+</head>
+<style>
+  body{
+    font-family:Arial,Helvitica,sans-serif;
+    background-image:url("cyan.jpg");
+    background-size:cover;
+    background-attachment:scroll;
+  }
+</style>
+<body>
+  <center><h3>Submit the answers for the following questions</h3></center>
+
+  <p>Name the compound used in anti-malarial drug</p>
+  <input type="radio" id="name" name="choice" value="kartik">
+  <br><br>
+  <input type="radio" id="name1" name="choice" value="devanshi">
+  DEVANSHI<br><br>
+  <input type="submit" onclick="check()" value="submit">
+  <br>
+  <p>What is my age</p>
+  <input type="radio" id="20" name="choice">
+  20 years old<br><br>
+  <input type="radio" id="21" name="choice">
+  <b>21 years old</b><br><br>
+  <input type="submit" onclick="check1()" value="submit">
+  <script>
+
+    function check(){
+      if(document.getElementById("name").checked){
+        alert("CORRECT");
+        count++;
+      }
+      else{
+        alert("INCORRECT");
+      }
+    }
+    function check1(){
+      if(document.getElementById("20").checked){
+        alert("CORRECT");
+      }
+
+    else{
+      alert("INCORRECT");
+    }
+  }
+
+  </script>
+</body>
+</html>

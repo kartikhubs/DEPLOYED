@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expert page</title>
+</head>
+<style>
+  body{
+    font-family:Arial,Helvitica,sans-serif;
+
+    background-image:url('blue.jpg');
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+
+
+
+
+
+  nav{
+    width:auto;
+    background-color:yellow;
+    color:black;
+    padding:7px 7px;
+    box-shadow:0px 5px 7px 5px grey;
+    text-align:left;
+    opacity:0.8;
+  }
+  a{
+    margin:7px;
+    text-decoration:none;
+    position:relative;
+    transition:font-size 0.3s;
+  }
+  a:hover{
+    text-decoration:none;
+    color:red;
+    transition-timing-function: ease-in;
+    transition-property: font-size;
+    font-size:25px;
+}
+.box1{
+  max-width:160px;
+  width:160px;
+  text-align:center;
+  opacity:0.8;
+  background-image:url("pcm2.jpg");
+  background-size:cover;
+  color:white;
+  position:absolute;
+  top:270px;
+  left:180px;
+  height:160px;
+}
+.box2{
+  max-width:160px;
+  width:160px;
+  text-align:center;
+  opacity:0.8;
+  background-image:url("biology.jpg");
+  background-size:cover;
+  color:white;
+  position:absolute;
+  top:270px;
+  left:650px;
+  height:160px;
+
+}
+.box3{
+  max-width:160px;
+  width:160px;
+  text-align:center;
+  opacity:0.8;
+  background-image:url("commerce.jpeg");
+  background-size:cover;
+  color:white;
+  position:absolute;
+  top:270px;
+  left:1120px;
+  height:160px;
+
+}
+.box4{
+  max-width:160px;
+  width:160px;
+  text-align:center;
+  opacity:0.8;
+  background-image:url("arts.jpg");
+  background-size:cover;
+  color:white;
+  position:absolute;
+  top:480px;
+  left:400px;
+  height:160px;
+}
+.box5{
+  max-width:160px;
+  width:160px;
+  text-align:center;
+  opacity:0.8;
+  background-image:url("others.jpg");
+  background-size:cover;
+  color:white;
+  position:absolute;
+  top:480px;
+  left:900px;
+  height:160px;
+
+}
+.box1,.box2,.box3,.box4,.box5:hover{
+  cursor:grabbing;
+}
+</style>
+<body>
+  <nav>
+    <a href="consult1st.html" style="margin-left:250px;"><strong><i>MAVEN</i></strong></a>
+    <a href="about us.html" style="margin-left:250px;">About Us</a>
+    <a href="contact.html" style="margin-left:250px;">Contact Us</a>
+
+    <a href="logout.php" style="float:right;margin-right:17px;top:-5px;font-weight:bold;">LOG-OUT</a>
+  </nav><br>
+  <img src="maven2.png" width="90px" height="90px">
+  <p style="font-family:Lucida Console,Monospace;font-size:15px;color:white;">INCUBATING BRAINS</p>
+  <span style="margin-left:280px;color:orange;font-size:40px;top:120px;position:absolute;text-decoration:underline;">Choose the stream in which you want to give guidance</span>
+  <div class="box1" id="box1" onmouseover="shade1()" onmouseout="dim1()" onclick="window.location.href='pcmquiz.html'">
+    <p style="margin-top:180px;"><b>PCM</b></p>
+
+  </div><br>
+
+
+  <div class="box2" id="box2" onmouseover="shade2()" onmouseout="dim2()" onclick="window.location.href='biologyquiz.html'">
+    <p style="margin-top:180px;"><b>BIOLOGY</b></p>
+
+  </div>
+  <div class="box3" id="box3" onmouseover="shade3()" onmouseout="dim3()" onclick="window.location.href='commercequiz.html'">
+    <p style="margin-top:180px;"><b>COMMERCE</b></p>
+
+  </div>
+  <div class="box4" id="box4" onmouseover="shade4()" onmouseout="dim4()" onclick="window.location.href='artsquiz.html'">
+    <p style="margin-top:180px;"><b>ARTS</b></p>
+
+  </div>
+<div class="box5" id="box5" onmouseover="shade5()" onmouseout="dim5()" onclick="window.location.href='otherquiz.html'">
+  <p style="margin-top:180px;"><b>OTHER CAREERS</b></p>
+
+</div>
+<script>
+    function shade1(){
+      document.getElementById("box1").style.boxShadow="0px 0px 3px 4px cyan";
+    }
+    function dim1(){
+      document.getElementById("box1").style.boxShadow="0px 0px 0px 0px white";
+    }
+    function shade2(){
+      document.getElementById("box2").style.boxShadow="0px 0px 3px 4px cyan";
+    }
+    function dim2(){
+      document.getElementById("box2").style.boxShadow="0px 0px 0px 0px white";
+    }
+    function shade3(){
+      document.getElementById("box3").style.boxShadow="0px 0px 3px 4px cyan";
+    }
+    function dim3(){
+      document.getElementById("box3").style.boxShadow="0px 0px 0px 0px white";
+    }
+    function shade4(){
+      document.getElementById("box4").style.boxShadow="0px 0px 3px 4px cyan";
+
+    }
+    function dim4(){
+      document.getElementById("box4").style.boxShadow="0px 0px 0px 0px white";
+    }
+    function shade5(){
+      document.getElementById("box5").style.boxShadow="0px 0px 3px 4px cyan";
+    }
+    function dim5(){
+      document.getElementById("box5").style.boxShadow="0px 0px 0px 0px white";
+    }</script>
+</body>
+</html>

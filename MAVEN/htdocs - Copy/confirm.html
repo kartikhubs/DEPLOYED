@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TOGGLECONFIRM</title>
+</head>
+<body>
+
+	<form name="kartik" method="post" action="">
+		<strong>EMAIL:</strong>
+		<input type="email"  name="email_Id"><br><br>
+		<strong>REWRITE:</strong>
+		<input type="email" name="EID"><br><br>
+		<button onclick="confirm()">CHECK IT</button></form>
+
+		<script>
+			function confirm()
+			{
+				var x=document.kartik.email_Id.value;
+				var y=document.kartik.EID.value;
+				if(x!=y){
+					alert("NOT MATCHED!!");
+				    document.forms.kartik.email_Id.focus();
+					
+				}
+				else{
+					document.write("MATCHED");
+				
+				}
+
+			}
+		</script> 
+</body>
+</html>

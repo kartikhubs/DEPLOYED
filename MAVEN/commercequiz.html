@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Commerce quiz</title>
+</head>
+<style>
+  body{
+    font-family:Arial,Helvitica,sans-serif;
+    background-image:url("quiz.jpg");
+    background-size:cover;
+    background-attachment:scroll;
+  }
+  nav{
+    width:auto;
+    background-color:yellow;
+    color:black;
+    padding:7px 7px;
+    box-shadow:0px 5px 7px 5px grey;
+    text-align:left;
+    opacity:0.8;
+  }
+  a{
+    margin:7px;
+    text-decoration:none;
+    position:relative;
+    transition: font-size 0.3s;
+  }
+  a:hover{
+    text-decoration:none;
+    color:red;
+    transition-timing-function: ease-in;
+    transition-property: font-size;
+    font-size:25px;
+}
+input[type=submit]{
+  width:50px;
+  background-color:blue;
+  height:30px;
+  border:none;
+  outline:none;
+  color:white;
+  transition:0.2s background-color;
+  border-radius:4px;
+}
+input[type=submit]:hover{
+  background-color:green;
+
+  transition-timing-function:ease-in;
+}
+button{
+  width:60px;
+  background-color:red;
+  height:30px;
+  border:none;
+  outline:none;
+  color:white;
+  transition:0.2s background-color;
+  border-radius:4px;
+
+}
+button:hover{
+  background-color:yellow;
+  color:black;
+  transition-timing-function:ease-in;
+}
+</style>
+<body>
+  <nav>
+    <a href="" style="margin-left:250px;"><strong><i>MAVEN</i></strong></a>
+    <a href="" style="margin-left:250px;">About Us</a>
+    <a href="" style="margin-left:250px;">Contact Us</a>
+
+    <a href="loginpage.html" style="float:right;margin-right:17px;top:-5px;font-weight:bold;">LOG-OUT</a>
+  </nav><br>
+  <img src="maven2.png" width="90px" height="90px">
+  <p style="font-family:Lucida Console,Monospace;font-size:15px;color:black;">INCUBATING BRAINS</p><br>
+  <center><h3 style="position:absolute;top:60px;left:240px;">THIS IS JUST AN ASSESSMENT TO CHECK WHETHER YOU HAVE KNOWLEDGE OF PARTICULAR STREAM OR NOT?</h3></center>
+  <span style="top:150px;position:absolute;left:1350px;"><i><b>MIN MARKS:5</b></i></span>
+  <span style="top:200px;position:absolute;left:1350px;"><i><b>MAX TIME:1 min</b></i></span>
+ <p><b>Break even, means?</B></P>
+  <input type="radio" id="name" name="choice">
+  <b> Costs are more than revenue<b>
+  <br><br>
+  <input type="radio" id="name1" name="choice">
+  <b>Revenue and cost are equal<b><br><br>
+  <input type="radio" id="name2" name="choice">
+  <b> Revenues are more than cost<b><br><br>
+  <input type="radio" id="name3" name="choice">
+  <b> None of the above<b><br><br>
+  <input type="submit" onclick="check()" value="submit">
+  <br>
+  <p>Which of the following is a current liability?</p>
+  <input type="radio" id="ans" name="choice">
+  <b>Debenture<b><br><br>
+  <input type="radio" id="ans1" name="choice">
+  <b>Long term loan</b><br><br>
+  <input type="radio" id="ans2" name="choice">
+  <b> Bank overdraft<b><br><br>
+  <input type="radio" id="ans3" name="choice">
+  <b> Share premium<b><br><br>
+  <input type="submit" onclick="check1()" value="submit">
+  <br>
+  <p>Acid test ratio is:</P>
+  <input type="radio" id="a" name="choice">
+  <b> Current assets: current liabiliti</b><br><br>
+  <input type="radio" id="a1" name="choice">
+  <b> Quick assets: current liabilities</b><br><br>
+  <input type="radio" id="a2" name="choice">
+  <b> Total assets: total liabilities</b><br><br>
+  <input type="radio" id="a3" name="choice">
+  <b> Fixed assets: fixed liabilities</B><br><br>
+  <input type="submit" onclick="check2()" value="submit">
+  <br>
+  <p>If earning price (EP) ratio is 0.05 and Earnings per share is Rs. 8, the market price of share = :</P>
+  <input type="radio" id="z" name="choice">
+  <b> Rs. 40<b><br><br>
+  <input type="radio" id="z1" name="choice">
+  <b>RS.100<b><br><br>
+  <input type="radio" id="z2" name="choice">
+  <b>RS.160<b><br><br>
+  <input type="radio" id="z3" name="choice">
+  <b> Rs. 0.40<b><br><br>
+  <input type="submit" onclick="check3()" value="submit">
+  <br>
+  <p>Long term assets having no physical existence but, possessing a value are called:</p>
+  <input type="radio" id="w" name="choice">
+  <b> Intangible assets<b><br><br>
+  <input type="radio" id="w1" name="choice">
+  <b> Fixed assets<b><br><br>
+  <input type="radio" id="w2" name="choice">
+  <b> Current assets<b><br><br>
+  <input type="radio" id="w3" name="choice">
+  <b> Investments<b><br><br>
+  <input type="submit" onclick="check4()" value="submit"><br>
+  <p>Copyrights, Patents and Trademarks are:</p>
+  <input type="radio" id="f" name="choice">
+  <b> Current assets<b><br><br>
+  <input type="radio" id="f1" name="choice">
+  <b>Fixed assets<b><br><br>
+  <input type="radio" id="f2" name="choice">
+  <b> Intangible assets<b><br><br>
+  <input type="radio" id="f3" name="choice">
+  <b>Investments<b><br><br>
+  <input type="submit" onclick="check5()" value="submit"><br>
+  <p>International trade and domestic trade differ because of:</p>
+  <input type="radio" id="g" name="choice">
+  <b>Immobility of factors<b><br><br>
+  <input type="radio" id="g1" name="choice">
+  <b>Trade restrictions<b><br><br>
+  <input type="radio" id="g2" name="choice">
+  <b>Different government policies<b><br><br>
+  <input type="radio" id="g3" name="choice">
+  <b>All of the above<b><br><br>
+  <input type="submit" onclick="check6()" value="submit"><br>
+  <p>Govt. policy about exports and imports is called:</p>
+  <input type="radio" id="h" name="choice">
+  <b>Commercial policy<b><br><br>
+  <input type="radio" id="h1" name="choice">
+  <b>Fiscal policy<b><br><br>
+  <input type="radio" id="h2" name="choice">
+  <b> Monetary policy<b><br><br>
+  <input type="radio" id="h3" name="choice">
+  <b> Finance policy<b><br><br>
+  <input type="submit" onclick="check7()" value="submit"><br>
+  <p>A company is formed by</p>
+  <input type="radio" id="u" name="choice">
+  <b>Director<b><br><br>
+  <input type="radio" id="u1" name="choice">
+  <b>Government<b><br><br>
+  <input type="radio" id="u2" name="choice">
+  <b>Promoters<b><br><br>
+  <input type="radio" id="u3" name="choice">
+  <b>Owners<b><br><br>
+  <input type="submit" onclick="check8()" value="submit"><br>
+  <p>Who is the father of Economics?</p>
+  <input type="radio" id="i" name="choice">
+  <b>Adam Smith<b><br><br>
+  <input type="radio" id="i1" name="choice">
+  <b>Milton Fredman<b><br><br>
+  <input type="radio" id="i2" name="choice">
+  <b>Thomas Sowell<b><br><br>
+  <input type="radio" id="i3" name="choice">
+  <b>Robert J.Shiller<b><br><br>
+  <input type="submit" onclick="check9()" value="submit"><br>
+  <center><button onclick="analyze()">CHECK</button></center>
+
+
+  <script>
+    var count1=0;
+    var count2=0;
+    var count3=0;
+    var count4=0;
+    var count5=0;
+    var count6=0;
+    var count7=0;
+    var count8=0;
+    var count9=0;
+    var count10=0;
+    var time=setInterval(mytime,60000);
+    function mytime(){
+      alert("Time over, you didn't complete the assessment in required time limit");
+      window.location.href="expertpage.html";
+    }
+    function check(){
+      if(document.getElementById("name2").checked){
+
+        count1=1;
+      }
+      else{
+
+        count1=0;
+      }
+    }
+    function check1(){
+      if(document.getElementById("ans2").checked){
+        count2=1;
+      }
+
+    else{
+      count2=0;
+    }
+  }
+  function check2(){
+    if(document.getElementById("a").checked){
+      count3=1;
+    }
+
+  else{
+    count3=0;
+  }
+}
+function check3(){
+  if(document.getElementById("z1").checked){
+    count4=1;
+  }
+
+else{
+ count4=0;
+}
+}
+function check4(){
+  if(document.getElementById("w3").checked){
+    count5=1;
+  }
+
+else{
+  count5=0;
+}
+}
+function check5(){
+  if(document.getElementById("f").checked){
+    count6=1;
+  }
+
+else{
+  count6=0;
+}
+}
+function check6(){
+  if(document.getElementById("g").checked){
+    count7=1;
+  }
+
+else{
+  count7=0;
+}
+}
+function check7(){
+  if(document.getElementById("h3").checked){
+    count8=1;
+  }
+
+else{
+  count8=0;
+}
+}
+function check8(){
+  if(document.getElementById("u2").checked){
+    count9=1;
+  }
+
+else{
+  count9=0;
+}
+}
+function check9(){
+  if(document.getElementById("i").checked){
+    count10=1;
+  }
+
+else{
+  count10=0;
+}
+}
+function analyze(){
+
+var x=count1+count2+count3+count4+count5+count6+count7+count8+count9+count10;
+if(x<5){
+  alert("Sorry, you didn't score even 50%, retake the test");
+  window.location.href="expertpage.html";
+}
+else{
+  alert("You have cleared the test");
+}}
+
+
+  </script>
+</body>
+</html>

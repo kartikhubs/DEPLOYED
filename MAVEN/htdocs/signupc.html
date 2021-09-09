@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Your Account</title>
+</head>
+<style>
+  body{
+    font-family:Arial,Helvitica,sans-serif;
+
+    background-image:url('enlign.jpg');
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+
+
+
+
+
+  nav{
+    width:auto;
+    background-color:yellow;
+    color:black;
+    padding:7px 7px;
+    box-shadow:0px 5px 7px 5px grey;
+    text-align:left;
+    opacity:0.8;
+  }
+  a{
+    margin:7px;
+    text-decoration:none;
+    position:relative;
+  }
+  a:hover{
+    text-decoration:none;
+    color:red;
+
+
+  }
+  .content{
+    max-width:400px;
+    width:400px;
+    opacity:0.9;
+    padding:7px 7px;
+    background-color:white;
+    color:black;
+    top:260px;
+    left:150px;
+    position:absolute;
+    text-align:left;
+    border-radius:5px;
+    box-shadow:0px 0px 5px 5px red;
+  }
+  input[type=text]{
+    width:200px;
+    border:none;
+    border-bottom:2px solid blue;
+    background-color:white;
+    outline:none;
+    transition: 0.2s border-bottom;
+
+
+
+
+  }
+  input[type=email]{
+    width:200px;
+    border:none;
+    border-bottom:2px solid blue;
+    background-color:white;
+    outline:none;
+    transition: 0.2s border-bottom;
+
+
+  }
+  input[type=password]{
+    width:200px;
+    border:none;
+    border-bottom:2px solid blue;
+    background-color:white;
+    outline:none;
+    transition: 0.2s border-bottom;
+
+  }
+  input[type=date]{
+    width:200px;
+    border:none;
+    border-bottom:2px solid blue;
+    background-color:white;
+    outline:none;
+    transition: 0.2s border-bottom;
+  }
+
+  input[type=text]:focus{
+    border-bottom:4px solid green;
+    transition-timing-function: ease-in-out;
+  }
+  input[type=email]:focus{
+    border-bottom:4px solid green;
+    transition-timing-function: ease-in-out;
+  }
+  input[type=password]:focus{
+    border-bottom:4px solid green;
+    transition-timing-function: ease-in-out;
+  }
+  input[type=date]:focus{
+    border-bottom:4px solid green;
+    transition-timing-function: ease-in-out;
+  }
+  input[type=submit]{
+    border-radius:3px;
+    background-color:cyan;
+    color:white;
+    width:100px;
+    border:0px;
+    outline:none;
+    height:40px;
+    margin:10px;
+    opacity:1;
+
+  }
+  input[type=reset]{
+    border-radius:3px;
+    background-color:cyan;
+    color:white;
+    width:100px;
+    border:0px;
+    outline:none;
+    height:40px;
+    opacity:1;
+
+
+  }
+  input[type=submit]:hover{
+    background-color:red;
+    cursor:grab;
+  }
+  input[type=reset]:hover{
+    background-color:red;
+    cursor:grab;
+  }
+
+
+  </style>
+  <body>
+    <nav>
+      <a href="" style="margin-left:15px;"><strong><i>MAVEN</i></strong></a>
+      <a href="" style="margin-left:15px;">ABOUT US</a>
+      <a href="" style="margin-left:15px;">CONTACT US</a>
+
+      <a href="loginpage.html" style="float:right;margin-right:17px;top:-5px;font-weight:bold;">LOG-IN</a>
+    </nav><br>
+    <img src="maven2.png" width="90px" height="90px">
+    <p style="font-family:Lucida Console,Monospace;font-size:15px;color:white;">INCUBATING BRAINS</p>
+    <h3 style="color:white;margin-left:250px;">SIGN-UP YOURSELF</h3>
+    <p style="color:white;margin-left:630px;font-size:60px;">Make yourself registered to get enlightened by our experts or enlighten others</p>
+    <div class="content"><br>
+      <form name="maven" action="loginpage.html" method="post">
+      <b>Name:</b>
+      <input type="text" id="name" name="name_" placeholder="Enter your name" autocomplete="off" required><br><br>
+      <b>Email-id:</b>
+      <input type="email" id="email" name="email_" placeholder="Enter your mail" autocomplete="off" required><br><br>
+      <b>Create password:</b>
+      <input type="password" id="password" name="pass" placeholder="Make password" onkeyup="pass()" required><br><br>
+      <b>Confirm password:</b>
+      <input type="password" id="code" name="passcode" placeholder="Re-enter password" onkeyup="pass()" required><br><br>
+      <b>Date of birth:</b>
+      <input type="date" id="date" name="date_" placeholder="Write date" autocomplete="off" required><br><br>
+
+
+      <input type="checkbox" required>
+      <span style="font-weight:normal;">I agree to the terms and conditions for signing up to this service,and I hereby confirm that I have read all the privacy policies</span><br><br><br>
+      <input style="margin-left:85px;" type="submit"  value="Sign-up" name="signup">
+      <input type="reset"  value="Reset" name="reset"></form>
+      </div>
+
+      <script>
+
+           var pass = function() {
+    if (document.getElementById('password').value ==
+      document.getElementById('code').value) {
+      alert("PASSWORD CORRECT");
+    } else {
+      alert("INCORRECT");
+    }
+  }
+
+     </script>
+
+
+
+
+  </body>
+  <html>

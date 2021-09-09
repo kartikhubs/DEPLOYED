@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VOTING AGE</title>
+</head>
+<body>
+	<strong>ENTER THE AGE:</strong>
+	<input type="text" id="myage"><br><br>
+	<button onclick="age()">CHECK VALIDITY</button> 
+	<p id="demo"></p>
+	<script>
+		function age(){
+			var x=document.getElementById("myage").value;
+			if(isNaN(x)){
+				document.getELementById("demo").innerHTML="INSERT A NUMBER";
+			}
+				
+
+			
+			if(parseInt(x)<18){
+				document.getElementById("demo").innerHTML="YOU ARE NOT ELIGIBLE";
+			}
+			else{
+				document.getElementById("demo").innerHTML="YOU ARE ELIGIBLE";
+			}
+		}
+	</script> 
+</body>
+</html>

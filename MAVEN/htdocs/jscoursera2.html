@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS2</title>
+</head>
+<body>
+     
+     	<fieldset>
+     		<legend>Shipping Information</legend>
+     		<strong>Name:</strong>
+     		<input type="text" id="name"><br><br>
+     		<strong>Zip code:</strong>
+     		<input type="text" id="zip1">
+     	</fieldset>
+
+     
+     <strong>Is the billing info same?</strong>
+     <input type="checkbox" id="check" onclick="check()" value="CHECK IT"></input><br>
+     
+     	<fieldset>
+     		<legend>Billing Information</legend>
+     		<strong>Name:</strong>
+     		<input type="text" id="name1"><br><br>
+     		<strong>Zip code:</strong>
+     		<input type="text" id="zip2">
+     	</fieldset>
+     
+     <script>
+     	function check(){
+     		var r=document.getElementById("name").value;
+     		var y=document.getElementById("zip1").value;
+     		var cheCK=document.getElementById("check");
+     		if(cheCK.checked==true){
+     			document.getElementById("name1").value=r;
+     			document.getElementById("zip2").value=y;
+     		}
+     		else{
+     			document.getElementById("name1").value="";
+     			document.getElementById("zip2").value="";
+     		}
+     	}
+     </script>
+ </body>
+ </html>

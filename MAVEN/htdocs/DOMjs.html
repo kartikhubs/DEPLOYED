@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EXTERNAL JS TESTING</title>
+</head>
+<body>
+	<button onclick="show()">SHOW DATE</button>
+	<p id="demo"></p>
+<script>
+	function show(){
+	var x=new Date();
+
+	document.getElementById("demo").innerHTML=x.getDay().toString();
+}
+</script>
+</body>
+</html>

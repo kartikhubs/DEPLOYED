@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose your profression</title>
+</head>
+<style>
+  body{
+    font-family:Arial,Helvitica,sans-serif;
+
+    background-image:url('mountain.jpg');
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+
+
+
+
+
+  nav{
+    width:auto;
+    background-color:yellow;
+    color:black;
+    padding:7px 7px;
+    box-shadow:0px 5px 7px 5px grey;
+    text-align:left;
+    opacity:0.8;
+  }
+  a{
+    margin:7px;
+    text-decoration:none;
+    position:relative;
+    transition:font-size 0.4s;
+  }
+  a:hover{
+    text-decoration:none;
+    color:red;
+    transition-property: font-size;
+    transition-timing-function: ease-in-out;
+    font-size:25px;
+
+
+  }
+  .expert{
+    max-width:400px;
+    width:400px;
+    height:300px;
+    text-align:center;
+    opacity:0.8;
+
+    color:white;
+    position:absolute;
+    top:300px;
+    left:190px;
+    background-image:url("expert.jpg");
+    background-size:cover;
+  }
+  .student{
+    max-width:400px;
+    width:400px;
+    height:300px;
+    text-align:center;
+    opacity:0.8;
+    background-image:url("student.jpg");
+    background-size:cover;
+    color:red;
+    position:absolute;
+    top:300px;
+    right:190px;
+
+
+
+  }
+  .student,.expert:hover{
+    cursor:grabbing;
+  }
+  </style>
+  <body>
+    <nav>
+      <a href="consult1st.html" style="margin-left:250px;"><strong><i>MAVEN</i></strong></a>
+      <a href="about us.html" style="margin-left:250px;">About Us</a>
+      <a href="contact.html" style="margin-left:250px;">Contact Us</a>
+
+      <a href="logout.php" style="float:right;margin-right:17px;top:-5px;font-weight:bold;">LOG-OUT</a>
+    </nav><br>
+    <img src="maven2.png" width="90px" height="90px">
+    <p style="font-family:Lucida Console,Monospace;font-size:15px;color:black;">INCUBATING BRAINS</p>
+    <p style="margin-left:300px;font-size:50px;">In which way you want to explore the site?</p>
+    <div class="expert" id="expert" onmouseover="glow1()" onmouseout="dim1()" onclick="window.location.href='expertpage.html'">
+      <p style="font-size:20px;">Go further as Expert</p>
+      </div>
+    <div class="student" id="student" onmouseover="glow2()" onmouseout="dim2()" onclick="window.location.href='StudentPage.html'">
+      <p style= "font-size:20px;">Go further as Student</p>
+      </div>
+    <script>
+      function glow1(){
+        document.getElementById("expert").style.boxShadow="0px 0px 3px 4px blue";
+
+      }
+      function dim1(){
+        document.getElementById("expert").style.boxShadow="0px 0px 0px 0px white";
+
+      }
+      function glow2(){
+        document.getElementById("student").style.boxShadow="0px 0px 3px 4px blue";
+      }
+      function dim2(){
+        document.getElementById("student").style.boxShadow="0px 0px 0px 0px white";
+      }
+      </script>
+  </body>
+  </html>

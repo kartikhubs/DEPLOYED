@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS1</title>
+</head>
+<body>
+	<img src="fruitsimg.jpg" id="img1" width="200px" height="200px" onmouseover="large()" onmouseout="small()" style="display:block;"><br><br>
+	<img src="catimg.jpg" id="img2"  width="200px" height="200px" onmouseover="large1()" onmouseout="small()" style="display:block;"><br><br>
+	<img src="puppyimg.jpg" id="img3" width="200px" height="200px" onmouseover="large2()" onmouseout="small()" style="display:block;">
+
+	<script>
+		function large(){
+			document.getElementById("img1").style.width="600px";
+			document.getElementById("img1").style.height="600px";
+			
+
+		}
+		function large1(){
+			document.getElementById("img2").style.width="600px";
+			document.getElementById("img2").style.height="600px";
+
+		}
+		function large2(){
+			document.getElementById("img3").style.width="600px";
+			document.getElementById("img3").style.height="600px";
+
+		}
+		function small(){
+			document.getElementById("img1").style.width="200px";
+			document.getElementById("img1").style.height="200px";
+
+			document.getElementById("img2").style.width="200px";
+			document.getElementById("img2").style.height="200px";
+
+			document.getElementById("img3").style.width="200px";
+			document.getElementById("img3").style.height="200px";
+
+		}
+	</script>
+ </body>
+</html>

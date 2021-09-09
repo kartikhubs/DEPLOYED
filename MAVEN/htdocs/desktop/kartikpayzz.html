@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<title>Second payment</title>
+<style>
+   body
+    {
+      font-family:Arial,Helvitica,sans-serif;
+      background-image:url("payment2.png");
+
+    }
+.avatar{
+   vertical-align:middle;
+   width:80px;
+   height:80px;
+   border-radius:50%;
+}
+a{
+  text-decoration: none;
+  display:inline-block;
+  padding:8px 16px;
+}
+a:hover{
+  background-color: cyan;
+  color: black;
+}
+input[type=text]
+{
+  width:35%;
+  box-sizing:border-box;
+  padding:7px 7px;
+  
+}
+input[type=email]
+{
+  width:35%;
+  box-sizing:border-box;
+  padding:7px 7px;
+}
+input[type=password]
+{
+  width:35%;
+  box-sizing:border-box;
+  padding:7px 7px;
+}
+input[type=submit]
+{
+  width:35%;
+  box-sizing:border-box;
+  padding:7px 7px:
+}
+
+.prev,.next{
+ cursor:pointer;
+ position:absolute;
+ top:50%;
+ width: auto;
+ padding: 16px;
+ margin-top: -22px;
+ color: white;
+ font-weight: bold;
+ font-size: 18px;
+ transition: 0.6s ease;
+ border-radius: 0 3px 3px 0;
+ user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.topnav{
+  background-color: pink;
+}
+.topnav kartik
+{
+   float: left;
+   padding: 14px 17px;
+   color: blue;
+   display: block;
+}
+.topnav kartik:hover{
+  background-color: cyan;
+  color: black;
+}
+.content{
+   background-color: white;
+   padding: 5px 5px;
+   opacity:0.8;
+   text-align:center;
+   margin: 8px 8px;
+   max-width:500px;
+   
+}
+</head>
+</style>
+<body>
+    <div class="topnav">
+    <a href="http://www.google.co.in">Google</a>
+    <a href="http://www.w3schools.com">School</a>
+    <a href="http://www.tutorialspoint">Learn</a>
+    </div>
+    <h2 style="color:yellow;"><b><i>KARTIKPAYZZ</i></b></h2>
+    <center>
+    <div class="content">
+       <h4><b>USER LOGIN</b></h4>
+    <img src="img_avatar.png" class="avatar">
+    <form action="lginconn.php" method="post"><center>
+      
+      <b>USERNAME</b>
+      <p><input type="text" name="username" required>
+      <br></p>
+      <b>PASSWORD</b>
+      <p><input type="password" name="password" required>
+      <br></p>
+      <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
+     
+      <input type="submit" value="Proceed">
+      <input type="submit" value="Forgot?">
+      <br></center></form>
+      </div></center>
+    
+    <a class="prev" onclick="plusSlides(-1)"><</a>
+    <a class="next" onclick="plusSlides(1)">></a>
+    <!--js-->
+    <script src='http://www.google.com/recaptcha/api.js'></script>
+
+   
+      
+      
+     
+  
+    
+    
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+	<title>ANIMATIONS</title>
+</head>
+<style>
+	body{
+		font-family:Lucida Console,Monospace;
+		
+		
+        
+
+	    
+	}
+<body>::before{
+	-webkit-filter:blur(3px);
+	-moz-filter:blur(3px);
+	filter:blur(3px);
+	background-image:url("sky2.jpg");
+	background-image:linear-gradient(to right,yellow,blue);
+}
+
+.content{
+	max-width:800px;
+	width:800px;
+	opacity:0.8;
+	padding:8px 8px;
+	top:170px;
+	position:absolute;
+	left:400px;
+	color:black;
+	background-color:white;
+	text-align:left;
+	z-index:2;
+}
+input[type=text]{
+	width:250px;
+	border:2;
+	padding:4px 14px;
+	
+
+	
+	
+	
+
+}
+input[type=password]{
+	width:250px;
+	border:2;
+	padding:4px 14px;
+
+
+}
+input[type=email]{
+	border:2;
+	padding:4px 14px;
+	
+	width:250px;
+}
+input[type=submit]{
+	border:2;
+	padding:4px 14px;
+	
+	width:250px;
+
+}
+input[type=text]:focus{
+	transition:width 1s;
+	transition-timing-function: ease-in-out;
+	width:450px;
+	border-color:orange;
+	border-style:hidden;
+	background-color:linen;
+
+}
+input[type=email]:focus{
+	transition:width 1s;
+	transition-timing-function: ease-in-out;
+	width:450px;
+	border-color:orange;
+	background-color:linen;
+	border-style:hidden;
+}
+input[type=password]:focus{
+	transition:width 1s;
+	transition-timing-function: ease-in-out;
+	width:450px;
+	border-color:orange;
+	background-color:linen;
+	border-style:hidden;
+}
+</style>
+<body>
+	
+	<center><div class="content"><form>
+		<strong>USERNAME:</strong>
+		<input type="text" name="uname"><br><br>
+		<strong>PASSWORD:</strong>
+		<input type="password" name="code"><br><br>
+		<strong>EMAIL-ID:</strong>
+		<input type="email" name="email"><br><br>
+		<center><input type="submit" value="PROCEED"></center>
+
+	</form>
+</div>
+</center>
+</body>
+</html>

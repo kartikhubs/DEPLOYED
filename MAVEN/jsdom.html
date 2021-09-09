@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML/CSS/js">
+	<meta name="author" content="KARTIK NEWLAY">
+	<meta name="description" content="Simple js testing">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Dom Testing</title> 
+</head> 
+<style>
+	body{
+		font-family:Arial,Helvitica,sans-serif;
+		background-image:url("goldman.jpg");
+		background-attachment:scroll;
+		background-repeat:no-repeat;
+		background-size:1700px 1000px;
+	}
+	.content{
+		max-width:500px;
+		width:500px;
+		opacity:0.8;
+		position:absolute;
+		top:200px;
+		left:500px;
+		background-color:white;
+		color:black;
+		text-align:center;
+		padding:5px;
+	}
+	input[type=text]{
+		border:none;
+		border-bottom:2px solid blue;
+		width:200px;
+		outline:none;
+		
+
+
+	}
+	input[type=text]:focus{
+		border-bottom:4px solid yellow;
+	}
+	input[type=email]{
+		border:none;
+		border-bottom:2px solid blue;
+		width:200px;
+		outline:none;
+
+
+	}
+	input[type=email]:focus{
+		border-bottom:4px solid yellow;
+	}
+	input[type=submit]{
+		width:150px;
+		background-color:red;
+		color:white;
+		border-radius:3px;
+		outline:none;
+	}
+	input[type=submit]:hover{
+		background-color:pink;
+		color:black;
+
+	}
+</style> 
+<body>
+	<div class="content"><br>
+		<form name="TESTER" method="POST" action="">
+			<strong>NAME:</strong>
+			<input type="text" id="name_" placeholder="Enter your name" onchange="upper()" autocomplete="off"><br><br>
+			<strong>EMAIL-ID:</strong>
+			<input type="email" id="email_" placeholder="Enter your email"  autocomplete="off"><br><br>
+			<center><input type="submit" value="PROCEED"></center>
+		</form>
+	</div>
+	<script>
+	    function upper(){
+	    	var e=document.getElementsByTagName("input");
+	    	e.value=e.value.toUpperCase();
+	    }</script>
+
+
+	</body> 
+	</html>

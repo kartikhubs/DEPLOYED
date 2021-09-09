@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact us</title>
+</head>
+<style>
+Body{
+ font-family: Arial, Helvetica, sans-serif;
+background-image:url('contact1.jpeg');
+background-repeat:no-repeat;
+background-attachment:scroll;
+background-size:cover;
+}
+nav{
+  width:auto;
+  background-color:yellow;
+  color:black;
+  padding:7px 7px;
+  box-shadow:0px 5px 7px 5px grey;
+  text-align:left;
+  opacity:0.8;
+}
+a{
+  margin:7px;
+  text-decoration:none;
+  position:relative;
+
+  transition:font-size 0.4s;
+}
+a:hover{
+  text-decoration:none;
+  color:red;
+  transition-property: font-size;
+  transition-timing-function: ease-in-out;
+  font-size:25px;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+        width: 290px; 
+        margin: 5px 0;
+        padding: 10px 10px; 
+        display: block; 
+        border: 2px solid green; 
+        box-sizing: border-box;
+        transition:width 0.3s;
+}
+
+input[type=text]:hover{
+   transition-timing-function: ease-in;
+   transition-property: width;
+   width:400px;
+
+}
+
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 5px;
+  padding: 18px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+
+<body>
+ <nav>
+    <a href="consult1st.html" style="margin-left:250px;"><strong><i>MAVEN</i></strong></a>
+    <a href="about us.html" style="margin-left:250px;">About Us</a>
+    <a href="contact.html" style="margin-left:250px;">Contact Us</a>
+
+    <a href="signupc.html" style="float:right;margin-right:17px;top:-5px;font-weight:bold;">SIGN-UP</a>
+  </nav><br>
+
+  <img src="maven2.png" width="90px" height="90px">
+  <p style="font-family:Lucida Console,Monospace;font-size:15px;color:black;">INCUBATING BRAINS</p>
+  <div style="text-align:center">
+    <h2 style="font-size:40px;text-decoration:underline;"><i><strong>Contact Us</strong></i></h2>
+    <p style="font-size:25px;"><strong>Feel free to talk</strong></p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <form action="mailto:kartik292000@gmail.com" method="post" enctype="text/plain" onsubmit="window.location.href='consult1st.html'">
+        <label for="Username">UserName</label>
+        <input type="text" id="Username" name="Username" autocomplete="off" placeholder="Your name.." required>
+        <label for="Email id">Email id</label>
+        <input type="text" id="Email id" name="Email" autocomplete="off" placeholder="Your Email id.." required>
+       <label for="Mobile no">Mobile no</label>
+        <input type="text" id="Mobile no" maxlength="10" name="Mobile no" autocomplete="off" placeholder="Your Mobile no.." required>
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+        <option value="India">India</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" required autocomplete="off" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

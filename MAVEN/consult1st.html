@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to our Website</title>
+  
+<style>
+  body{
+    font-family:Arial,Helvitica,sans-serif;
+    background-image:url("consult3.jpg");
+    background-repeat:no-repeat;
+    background-size:1600px 1000px;
+    animation-name:test;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
+    animation-duration:10s;
+    overflow-x:hidden;
+
+
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  nav{
+    width:auto;
+    background-color:yellow;
+    color:black;
+    padding:7px 7px;
+    box-shadow:0px 5px 7px 5px grey;
+    text-align:left;
+    opacity:0.8;
+  }
+  a{
+    margin:7px;
+    text-decoration:none;
+    position:relative;
+    transition:font-size 0.3s;
+  }
+  a:hover{
+    text-decoration:none;
+    color:red;
+    font-size:25px;
+    transition-timing-function:ease-in-out;
+    transition-property:font-size;
+
+
+  }
+  @keyframes test{
+    0%{
+      background-image:url("consult3.jpg");
+    }
+    30%{
+      background-image:url("consult4.jpg");
+    }
+    70%{
+      background-image:url("consult5.jpg");
+    }
+  }
+  button[type=button]{
+    width:300px;
+    background-color:green;
+    color:white;
+    height:50px;
+    border-radius:7px;
+    border:0px;
+    outline:none;
+    position:absolute;
+    top:450px;
+    left:600px;
+    text-align:center;
+    opacity:0.8;
+  }
+  button:hover{
+    background-color:orange;
+    color:white;
+    cursor:grab;
+    box-shadow:0px 0px 6px 2px cyan;
+  }
+  .box1{
+    border-radius:20px;
+    width:400px;
+    text-align:center;
+    position:absolute;
+    left:85px;
+    top:650px;
+    background-image:linear-gradient(to right,pink,white);
+    height:250px;
+    box-shadow:0px 0px 5px 2px blue;
+
+
+  }
+  .box2{
+    border-radius:20px;
+    width:400px;
+    text-align:center;
+    position:absolute;
+    left:585px;
+    top:650px;
+    background-image:linear-gradient(to right,red,white);
+    height:300px;
+    box-shadow:0px 0px 5px 2px blue;
+  }
+  .box3{
+    border-radius:20px;
+    width:400px;
+    text-align:center;
+    position:absolute;
+    left:1085px;
+    top:650px;
+    background-image:linear-gradient(to right,grey,white);
+    height:250px;
+    box-shadow:0px 0px 5px 2px blue;
+  }
+  .quiz{
+    background-color:grey;
+    color:white;
+    margin:0px 0px;
+    max-width:1510px;
+    width:1510px;
+    height:480px;
+    position:absolute;
+    top:1000px;
+    padding:5px 5px;
+    left:0px;
+    text-align:center;
+    
+
+  }
+  li{
+    text-align:left;
+    margin:3px;
+  }
+  
+  footer{
+    background-color:yellow;
+    color:black;
+    text-align:left;
+    position:absolute;
+    top:1490px;
+    left:0px;
+    padding:3px 3px;
+    max-width:1514px;
+    width:1514px;
+
+    
+  }
+
+  
+  </style>
+  <body>
+    <nav>
+      <a href="consult1st.html" style="margin-left:250px;"><strong><i>MAVEN</i></strong></a>
+      <a href="about us.html" style="margin-left:250px;">About Us</a>
+      <a href="contact.html" style="margin-left:250px;">Contact Us</a>
+      <a href="signupc.html" style="float:right;margin-right:17px;top:-5px;font-weight:bold;">SIGN-UP</a>
+      <a href="loginpage.html" style="float:right;margin-right:17px;top:-5px;font-weight:bold;">LOG-IN</a>
+    </nav><br>
+    <img src="maven2.png" width="90px" height="90px">
+    <p style="font-family:Lucida Console,Monospace;font-size:15px;color:white;">INCUBATING BRAINS</p>
+    <span style="position:absolute;left:50px;top:250px;color:orange;font-size:40px;font-weight:bold;">Welcome to <strong>MAVEN</strong>. An easy and convenient way to give guidance and get guidance. A platform where students can connect with experts for shaping their future.</span><br>
+    <button type=button autofocus="on" onclick="window.location.href='signupc.html'">GET STARTED</button><br>
+    
+    <div class="box1">
+      <b>CONSULTANCY</b>
+      <br><br><br>
+      <li>Helps pick the right stream</li><br>
+      <li>Helps gain confidence and insight</li><br>
+      <li>Helps bring stability in thought processing</li><br>
+      <li>Understands the hurdle in student's mind</li><br>
+    </div>
+    <div class="box2">
+      <b>LEARNING</b>
+      <br><br><br>
+      <li>Exploring the things more and more</li><br>
+      <li>Creating a vision statement, you can envision your career</li><br>
+      <li>The skill you have and how to use it is only described by others</li><br>
+      <li>If you are doubt-free, there will be clarity in reaching your goal</li><br>
+    </div>
+    <div class="box3">
+      <b>REFERENCE</b>
+      <br><br><br>
+      <li>Students can get reference of an expert</li><br>
+      <li>Using this reference, he/she may connect with expert in future freely</li><br>
+      <li>Expert may get benefit from reference as it will help him/her to showcase their knowledge in more ways</li>
+
+    </div>
+    <div class="quiz"><br>
+      <b style="font-size:30px;">Frequently asked Questions</b>
+      <p style="text-align:left;">Q1. Is it okay to go with your favorite stream or to go with ongoing trend in market?</p>
+      <br>
+      <p style="text-align:left;">Q2. Should I take drop or carry on with the current opportunities?</p>
+      <br>
+      <p style="text-align:left;">Q3. Is concept of dummy school nice or is it just to lower your academic pressure of school in you?</p>
+      <br>
+      <p style="text-align:left;">Q4. What is the correct way to study, learn and write something in exam?</p>
+      <br>
+      <p style="text-align:left;">Q5. How much my 10th class percentage helpful in future?</p>
+      <br>
+      <p style="text-align:left;">Q6. How much flourishing is a career if we choose other fields like diploma,law,film acting etc?</p>
+
+    </div>
+    <footer>
+      <img src="maven2.png" width="130px" height="130px" style="position:absolute;left:650px;margin-top:25px;">
+      <b style="float:right;position:absolute;right:110px;"><span style="text-decoration:underline;">Team Maven</span><br><br><br><i>Copyright © 2020</i><br><br><br>Developed by CS1 students, 5th sem, GGITS</b>
+      
+      <b><a href="about us.html">About Us</a></b><br><br>
+      <b>Email Us(MAVEN)</b>
+      <ul style="list-style-type:square;">
+        <li>mayankdubeyofficial@gmail.com</li>
+        <li>kourav.jigyasa77@gmail.com</li>
+        <li>singhnamrata852@gmail.com</li>
+        <li>namang2312@gmail.com</li>
+        <li>kartik292000@gmail.com</li>
+      </ul>
+      <b><a href="contact.html">Contact Us</a></b>
+      
+      
+
+    </footer>
+
+
+
+  </body>
+  <html>

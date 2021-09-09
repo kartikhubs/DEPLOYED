@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<title>FORM VALIDATION USING JS</title>
+</head>
+<body>
+	
+	<form name="KARTIK" method="post" onsubmit="valid()">
+		<fieldset>
+			<legend>Fill The Details</legend>
+			<strong>NAME:</strong>
+			<input type="text" name="name" id="name" autocomplete="off" required><br><br>
+			<strong>AGE:</strong>
+			<input type="number" name="age" id="age" autocomplete="off" step="1" required>
+			<input type="submit" value="GO">
+		</fieldset>
+	</form>
+	<p id="demo"></p>
+
+	<script>
+		function valid(){
+			var y=document.forms["KARTIK"]["name"].value;
+			if(isNaN(y)){
+                document.getElementById("demo").innerHTML="Right input";
+			}
+			
+			else{
+				location.href="http://www.google.co.in";
+			}
+		}
+	</script>
+
+</body>
+</html>

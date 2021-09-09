@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<title>IWTASSIGNMENT2</title>
+</head>
+<style>
+	body{
+		font-family:Lucida Console,Monospace;
+	}
+	#button{
+		width:100px;
+		border-radius:12px;
+		background-color:pink;
+		color:black;
+	}
+</style>
+<body>
+	<center><h2>TOGGLE THE BUTTON TO TURN IT ON/OFF</h2></center>
+	<center><img src="switch2.jpg" width="300"  id="button1"></center>
+	<center><button onclick="on()" id="button">TURN ON</button></center><br><br>
+	<center><button onclick="off()" id="button">TURN OFF</button></center>
+	<script>
+		function on(){
+			document.getElementById("button1").src="switch3.jpg";
+		}
+        function off(){
+        	document.getElementById("button1").src="switch2.jpg";}
+
+         </script>
+	
+</body>
+</html>

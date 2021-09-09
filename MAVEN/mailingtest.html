@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MAILING IN JS</title>
+    <script src= 
+    "https://smtpjs.com/v3/smtp.js"> 
+  </script> 
+    <script>
+		function mail(){
+			Email.send({
+				Host:"smtp.gmail.com";
+				Username:"kartik292000@gmail.com";
+				Password:"Enter your password";
+				To:'kartik292000@gmail.com';
+				From:'kartik292000@gmail.com';
+				Body:'This is a mail testing';
+
+			}).then(function (message){
+				alert("mail sent ");
+			});
+		}
+	</script>
+
+<body>
+	<form method="post">
+		<input type="button" value="CLICK" onclick="mail()">
+	</form>
+	
+</body>
+</html>
+
+		

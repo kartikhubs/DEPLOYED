@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Others quiz</title>
+</head>
+<style>
+  body{
+    font-family:Arial,Helvitica,sans-serif;
+    background-image:url("quiz.jpg");
+    background-size:cover;
+    background-attachment:scroll;
+  }
+  nav{
+    width:auto;
+    background-color:yellow;
+    color:black;
+    padding:7px 7px;
+    box-shadow:0px 5px 7px 5px grey;
+    text-align:left;
+    opacity:0.8;
+  }
+  a{
+    margin:7px;
+    text-decoration:none;
+    position:relative;
+    transition:font-size 0.3s;
+  }
+  a:hover{
+    text-decoration:none;
+    color:red;
+    transition-timing-function: ease-in;
+    transition-property: font-size;
+    font-size:25px;
+}
+input[type=submit]{
+  width:50px;
+  background-color:blue;
+  height:30px;
+  border:none;
+  outline:none;
+  color:white;
+  transition:0.2s background-color;
+  border-radius:4px;
+}
+input[type=submit]:hover{
+  background-color:green;
+
+  transition-timing-function:ease-in;
+}
+button{
+  width:60px;
+  background-color:red;
+  height:30px;
+  border:none;
+  outline:none;
+  color:white;
+  transition:0.2s background-color;
+  border-radius:4px;
+
+}
+button:hover{
+  background-color:yellow;
+  color:black;
+  transition-timing-function:ease-in;
+}
+</style>
+<body>
+  <nav>
+    <a href="consult1st.html" style="margin-left:250px;"><strong><i>MAVEN</i></strong></a>
+    <a href="about us.html" style="margin-left:250px;">About Us</a>
+    <a href="contact.html" style="margin-left:250px;">Contact Us</a>
+
+    <a href="logout.php" style="float:right;margin-right:17px;top:-5px;font-weight:bold;">LOG-OUT</a>
+  </nav><br>
+  <img src="maven2.png" width="90px" height="90px">
+  <p style="font-family:Lucida Console,Monospace;font-size:15px;color:black;">INCUBATING BRAINS</p><br>
+  <center><h3 style="position:absolute;top:60px;left:240px;">THIS IS JUST AN ASSESSMENT TO CHECK WHETHER YOU HAVE KNOWLEDGE OF PARTICULAR STREAM OR NOT?</h3></center>
+  <span style="top:150px;position:absolute;left:1350px;"><i><b>MIN MARKS:7</b></i></span>
+  <span style="top:200px;position:absolute;left:1350px;"><i><b>MAX TIME:2 mins</b></i></span>
+
+
+  <p><b>1.Who was the director of the famous movie'Sholay'?</b></P>
+  <input type="radio" id="name" name="choice">
+  <b>Ramesh Sippy<b><br><br>
+  <input type="radio" id="name1" name="choice">
+  <b>Mehboob khan<b><br><br>
+  <input type="radio" id="name2" name="choice">
+  <b>Shakti Samanta<b><br><br>
+  <input type="radio" id="name3" name="choice">
+  <b>None of these<b><br><br>
+  <input type="submit" onclick="check()" value="submit">
+  <br>
+  <p>2.Which was the first Indian movie nominated for Oscar?</p>
+  <input type="radio" id="ans" name="choice">
+  <b>Lagaan<b><br><br>
+  <input type="radio" id="ans1" name="choice">
+  <b>Alam Ara</b><br><br>
+  <input type="radio" id="ans2" name="choice">
+  <b>Mother India<b><br><br>
+  <input type="radio" id="ans3" name="choice">
+  <b>Salaam Bombay<b><br><br>
+  <input type="submit" onclick="check1()" value="submit">
+  <br>
+  <p>3.Which was the first talkie film in India?</P>
+  <input type="radio" id="a" name="choice">
+  <b>Pundlik</b><br><br>
+  <input type="radio" id="a1" name="choice">
+  <b>Alam Ara</b><br><br>
+  <input type="radio" id="a2" name="choice">
+  <b>Nal Damayanti</b><br><br>
+  <input type="radio" id="a3" name="choice">
+  <b>None of these</b><br><br>
+  <input type="submit" onclick="check2()" value="submit">
+  <br>
+  <p>4.Tender is____</P>
+  <input type="radio" id="z" name="choice">
+  <b>An offer<b><br><br>
+  <input type="radio" id="z1" name="choice">
+  <b>A counter offer<b><br><br>
+  <input type="radio" id="z2" name="choice">
+  <b>A promise<b><br><br>
+  <input type="radio" id="z3" name="choice">
+  <b>An invitation to offer<b><br><br>
+  <input type="submit" onclick="check3()" value="submit">
+  <br>
+  <p>5.The law against child labour was implemented in the year____.</p>
+  <input type="radio" id="w" name="choice">
+  <b>2007<b><br><br>
+  <input type="radio" id="w1" name="choice">
+  <b>2005<b><br><br>
+  <input type="radio" id="w2" name="choice">
+  <b>2002<b><br><br>
+  <input type="radio" id="w3" name="choice">
+  <b>2006<b><br><br>
+  <input type="submit" onclick="check4()" value="submit"><br>
+  <p>6.Which  process is used to manufacture plastic pipes?</p>
+  <input type="radio" id="f" name="choice">
+  <b>Vaccum forming<b><br><br>
+  <input type="radio" id="f1" name="choice">
+  <b>Blow moulding<b><br><br>
+  <input type="radio" id="f2" name="choice">
+  <b>Injection moulding<b><br><br>
+  <input type="radio" id="f3" name="choice">
+  <b>Extrusion moulding<b><br><br>
+  <input type="submit" onclick="check5()" value="submit"><br>
+  <p>7.Which of the following is the chemical property of a metal?</p>
+  <input type="radio" id="g" name="choice">
+  <b>Elasticity<b><br><br>
+  <input type="radio" id="g1" name="choice">
+  <b>Hardness<b><br><br>
+  <input type="radio" id="g2" name="choice">
+  <b>Conductivity<b><br><br>
+  <input type="radio" id="g3" name="choice">
+  <b>Corrosiveness<b><br><br>
+  <input type="submit" onclick="check6()" value="submit"><br>
+  <p>8.LEVI'S brand is the example of-</p>
+  <input type="radio" id="h" name="choice">
+  <b>Sports wear<b><br><br>
+  <input type="radio" id="h1" name="choice">
+  <b>Bridal<b><br><br>
+  <input type="radio" id="h2" name="choice">
+  <b>Jeans<b><br><br>
+  <input type="radio" id="h3" name="choice">
+  <b>Suit<b><br><br>
+  <input type="submit" onclick="check7()" value="submit"><br>
+  <p>9."king of fibres" is-</p>
+  <input type="radio" id="u" name="choice">
+  <b>Cotton<b><br><br>
+  <input type="radio" id="u1" name="choice">
+  <b>Jute<b><br><br>
+  <input type="radio" id="u2" name="choice">
+  <b>Nylon<b><br><br>
+  <input type="radio" id="u3" name="choice">
+  <b>Silk<b><br><br>
+  <input type="submit" onclick="check8()" value="submit"><br>
+  <p>10.Density is expressed as?</p>
+  <input type="radio" id="i" name="choice">
+  <b>Distance/time<b><br><br>
+  <input type="radio" id="i1" name="choice">
+  <b>Mass per unit volume<b><br><br>
+  <input type="radio" id="i2" name="choice">
+  <b>relative mass per unit volume<b><br><br>
+  <input type="radio" id="i3" name="choice">
+  <b>None of these<b><br><br>
+  <input type="submit" onclick="check9()" value="submit"><br>
+<p>11.Jury is a:</p>
+  <input type="radio" id="j" name="choice">
+  <b>Group of accused<b><br><br>
+  <input type="radio" id="j1" name="choice">
+  <b>Group of lawyers<b><br><br>
+  <input type="radio" id="j2" name="choice">
+  <b>Group of high court judges<b><br><br>
+  <input type="radio" id="j3" name="choice">
+  <b>Group of people judging the accused<b><br><br>
+  <input type="submit" onclick="check9()" value="submit"><br>
+<p>12.Session courts are:</p>
+  <input type="radio" id="k" name="choice">
+  <b>Tehsil courts<b><br><br>
+  <input type="radio" id="k1" name="choice">
+  <b>District courts<b><br><br>
+  <input type="radio" id="k2" name="choice">
+  <b>Divisional courts<b><br><br>
+  <input type="radio" id="k3" name="choice">
+  <b>None of these<b><br><br>
+  <input type="submit" onclick="check9()" value="submit"><br>
+<p>13.Film and Television Institute of India located at-</p>
+  <input type="radio" id="l" name="choice">
+  <b>Mumbai<b><br><br>
+  <input type="radio" id="l1" name="choice">
+  <b>Pune<b><br><br>
+  <input type="radio" id="l2" name="choice">
+  <b>Delhi<b><br><br>
+  <input type="radio" id="l3" name="choice">
+  <b>Kolkata<b><br><br>
+  <input type="submit" onclick="check9()" value="submit"><br>
+<p>14.Scalars are quantities that are described by______</p>
+  <input type="radio" id="m" name="choice">
+  <b>Motion<b><br><br>
+  <input type="radio" id="m1" name="choice">
+  <b>Direction<b><br><br>
+  <input type="radio" id="m2" name="choice">
+  <b>Magnitude & direction<b><br><br>
+  <input type="radio" id="m3" name="choice">
+  <b>Magnitude<b><br><br>
+  <input type="submit" onclick="check9()" value="submit"><br>
+<p>15.Payment of cash on receipt of merchandise is</p>
+  <input type="radio" id="n" name="choice">
+  <b>Cash on Acceptance<b><br><br>
+  <input type="radio" id="n1" name="choice">
+  <b>Cash on Payment<b><br><br>
+  <input type="radio" id="n2" name="choice">
+  <b>Cheque<b><br><br>
+  <input type="radio" id="n3" name="choice">
+  <b>Cash on Delivery<b><br><br>
+  <input type="submit" onclick="check9()" value="submit"><br>
+  <center><button onclick="analyze()">CHECK</button></center>
+
+
+
+
+  <script>
+    var count1=0;
+    var count2=0;
+    var count3=0;
+    var count4=0;
+    var count5=0;
+    var count6=0;
+    var count7=0;
+    var count8=0;
+    var count9=0;
+    var count10=0;
+    var count11=0;
+    var count12=0;
+    var count13=0;
+    var count14=0;
+    var count15=0;
+    var time=setInterval(mytime,120000);
+    function mytime(){
+      alert("Time over, you didn't complete the assessment in required time limit");
+      window.location.href="expertpage.html";
+    }
+
+    function check(){
+      if(document.getElementById("name").checked){
+
+        count1=1;
+      }
+      else{
+
+        count1=0;
+      }
+    }
+    function check1(){
+      if(document.getElementById("ans2").checked){
+        count2=1;
+      }
+
+    else{
+      count2=0;
+    }
+  }
+  function check2(){
+    if(document.getElementById("a1").checked){
+      count3=1;
+    }
+
+  else{
+    count3=0;
+  }
+}
+function check3(){
+  if(document.getElementById("z3").checked){
+    count4=1;
+  }
+
+else{
+ count4=0;
+}
+}
+function check4(){
+  if(document.getElementById("w3").checked){
+    count5=1;
+  }
+
+else{
+  count5=0;
+}
+}
+function check5(){
+  if(document.getElementById("f3").checked){
+    count6=1;
+  }
+
+else{
+  count6=0;
+}
+}
+function check6(){
+  if(document.getElementById("g3").checked){
+    count7=1;
+  }
+
+else{
+  count7=0;
+}
+}
+function check7(){
+  if(document.getElementById("h2").checked){
+    count8=1;
+  }
+
+else{
+  count8=0;
+}
+}
+function check8(){
+  if(document.getElementById("u").checked){
+    count9=1;
+  }
+
+else{
+  count9=0;
+}
+}
+function check9(){
+  if(document.getElementById("i1").checked){
+    count10=1;
+  }
+
+else{
+  count10=0;
+}
+}
+function check10(){
+  if(document.getElementById("j3").checked){
+    count11=1;
+  }
+
+else{
+  count11=0;
+}
+}
+function check11(){
+  if(document.getElementById("k1").checked){
+    count12=1;
+  }
+
+else{
+  count12=0;
+}
+}
+function check12(){
+  if(document.getElementById("l1").checked){
+    count13=1;
+  }
+
+else{
+  count13=0;
+}
+}
+function check13(){
+  if(document.getElementById("m3").checked){
+    count14=1;
+  }
+
+else{
+  count14=0;
+}
+}
+function check14(){
+  if(document.getElementById("n3").checked){
+    count15=1;
+  }
+
+else{
+  count15=0;
+}
+}
+function analyze(){
+
+var x=count1+count2+count3+count4+count5+count6+count7+count8+count9+count10+count11+count12+count13+count4+count15;                                     ;
+if(x<7){
+  alert("Sorry, you didn't score even 50%, retake the test");
+  window.location.href="expertpage.html";
+}
+else{
+  alert("You have cleared the test");
+  window.location.href="Form3.html";
+}}
+
+
+  </script>
+</body>
+</html>

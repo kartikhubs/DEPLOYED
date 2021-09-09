@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <title>FIRST PAGE</title>
+</head>
+<style>
+	body{
+		font-family:Lucida Console,Monospace;
+		background-image:url("store2.png");
+		background-repeat:no-repeat;
+		background-size:1700px 1000px;
+
+	
+	}
+	.content{
+		max-width:600px;
+		width:600px;
+		opacity:0.8;
+		background-color:white;
+		color:black;
+		position:absolute;
+		top:200px;
+		left:450px;
+		text-align:left;
+		padding:8px 14px;
+		outline-style:solid;
+		outline-color:red;
+		outline-width:3px;
+		z-index:5;
+	}
+	
+	input[type=text]{
+		width:300px;
+		transition:width 1s;
+		box-sizing:border-box;
+		border-radius:12px;
+		padding:8px 8px;
+	}
+	input[type=date]{
+		width:300px;
+		transition:width 1s;
+		box-sizing:border-box;
+		border-radius:12px;
+		padding:8px 8px;
+
+	}
+	input[type=submit]
+	{
+		background-color:yellow;
+		border-radius:12px;
+		color:black;
+		border-width:0px;
+	}
+	input[type=submit]:hover{
+		background-color:red;
+		color:white;
+		width:100px;
+	}
+	button[type=reset]{
+		background-color:yellow;
+		border-radius:12px;
+		color:black;
+		border-width:0px;
+
+	}
+    button[type=reset]:hover{
+    	background-color:red;
+		color:white;
+		width:100px;
+    }
+	input[type=text]:focus{
+		width:350px;
+		transition-timing-function:ease-in-out;
+		background-color:rgb(115,195,108);
+		color:white;
+	}
+	input[type=date]:focus{
+		width:320px;
+		transition-timing-function:ease-in-out;
+		background-color:rgb(115,195,108);
+		color:white;
+	}
+	button[type=button]{
+		background-color:yellow;
+		border-radius:12px;
+		color:black;
+		border-width:0px;
+	}
+	button[type=button]:hover{
+		background-color:red;
+		color:white;
+		width:100px;
+	}
+</style>
+<body>
+
+	    
+		<center><h1 style="color:cyan;">ADD STOCK</h1></center>
+		
+		<div class="content">
+			<img src="ggits.png" style="margin-left:240px;" width="100px" height="100px">
+			<form method="post" action="table1.php">
+		
+			<strong>SESSION:</strong>
+			<input type="text" name="sess"  placeholder="Enter session" autocomplete="off" required><br><br>
+			<strong>COLLEGE NAME:</strong>
+			<input type="text" name="college" placeholder="Mention college" autocomplete="off" required><br><br>
+            
+			
+		
+		    <strong>ENTER STOCK NAME:</strong>
+		    <select name="stock" required>
+		    	<option value=""></option>
+		    	<option value="Electricals">ELECTRICALS</option>
+		    	<option value="Plumber">PLUMBER</option>
+		    	<option value="Weldings">WELDING</option>
+		    </select><br><br>
+			
+			<center><input type="submit" value="ADD"></center><br>
+			<center><button type="reset">CANCEL</button></center><br>
+			<center><a href="grid.php"><button type="button">SHOW GRID</button></center>
+		</form></div>
+
+	    
+			
+	
+
+	
+</body>
+</html>

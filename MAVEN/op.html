@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Operators testing</title> 
+</head>
+<style>
+	fieldset{
+		background-color:yellow;
+		color:black;
+		box-shadow:0px 4px 5px 4px grey;
+
+	}
+	legend{
+		background-color:cyan;
+		box-shadow:0px 0px 7px 4px grey;
+		animation-name:test;
+		animation-duration:2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
+	@keyframes test{
+         from{
+         	background-color:cyan;
+         }
+         to{
+         	background-color:pink;
+         }
+	}
+	input[type=text]{
+		border:none;
+		border-bottom:2px solid blue;
+		background-color:yellow;
+		transition:border-bottom 0.2s;
+		outline:none;
+
+	}
+	input[type=text]:focus{
+		border-bottom:4px solid orange;
+		transition-timing-function:ease-in;
+	}
+	
+
+	input[type=email]{
+		border:none;
+		border-bottom:2px solid blue;
+		background-color:yellow;
+		transition:border-bottom 0.2s;
+		outline:none;
+    }
+    input[type=email]:focus{
+		border-bottom:4px solid orange;
+		transition-timing-function:ease-in;
+	}
+
+</style> 
+<body>
+	<fieldset>
+		<legend>FILL YOUR DETAILS</legend><br>
+	    <input type="text" name="name" id="name" placeholder="Name" autocomplete="off"><br><br>
+
+		<input type="email" name="email" placeholder="Email">
+	</fieldset> 
+</body> 
+</html>

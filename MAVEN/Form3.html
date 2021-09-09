@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expert Detailing</title>
+</head>
+<style>
+  body{
+    font-family:Arial,Helvitica,sans-serif;
+
+    background-image:url("exp.jpeg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+
+
+
+
+
+ 
+  .content{
+    max-width:500px;
+    width:500px;
+    opacity:0.9;
+    padding:7px 7px;
+    background-color:black;
+    color:white;
+    top:50px;
+    float:right;
+    position:relative;
+    right:10px;
+    text-align:left;
+    border-radius:5px;
+    border-bottom:1px solid white;
+    outline:none;
+    
+  }
+  input[type=text]{
+    width:350px;
+    border:none;
+    border-bottom:1px solid blue;
+    background-color:black;
+    outline:none;
+    transition: 0.1s border-bottom;
+    color:white;
+
+
+
+
+  }
+  input[type=email]{
+    width:350px;
+    border:none;
+    border-bottom:1px solid blue;
+    background-color:black;
+    outline:none;
+    transition: 0.1s border-bottom;
+    color:white;
+
+
+  }
+  
+ 
+
+  input[type=text]:focus{
+    border-bottom:1px solid white;
+    transition-timing-function: ease-in-out;
+  }
+  input[type=email]:focus{
+    border-bottom:1px solid white;
+    transition-timing-function: ease-in-out;
+  }
+  select:focus{
+    border-bottom:1px solid white;
+  }
+  input[type=submit]{
+    border-radius:3px;
+    background-color:blue;
+    color:white;
+    width:150px;
+    border:0px;
+    outline:none;
+    height:40px;
+    margin:10px;
+    opacity:1;
+
+  }
+  select{
+    border:0px;
+    outline:none;
+    background-color:black;
+    color:white;
+    border-bottom:1px solid blue;
+    width:350px;
+
+
+
+  }
+  textarea:focus{
+    outline:none;
+    background-color:white;
+    color:black;
+  }
+  textarea{
+    background-color:yellow;
+    color:black;
+    width:420px;
+    height:100px;
+  }
+  input[type=reset]{
+    border-radius:3px;
+    background-color:cyan;
+    color:white;
+    width:100px;
+    border:0px;
+    outline:none;
+    height:40px;
+    opacity:1;
+
+
+  }
+  input[type=submit]:hover{
+    background-color:red;
+    cursor:grab;
+  }
+
+  button{
+    width:150px;
+
+    background-color:blue;
+    color:white;
+    border:0px;
+    outline:none;
+    height:40px;
+    border-radius:5px;
+  }
+  button:hover{
+    background-color:red;
+    color:white;
+    cursor:grabbing;
+  }
+
+  </style>
+  <body>
+    
+    <span style="position:absolute;top:300px;left:180px;color:white;font-size:30px;">YOU ARE ONE STEP AWAY TO GIVE GUIDANCE!</span>
+    <span style="position:absolute;left:290px;top:350px;color:white;">Maven is not only a WEBSITE, but a GATEWAY to enlightenment!</span>
+    <button onclick="window.location.href='expertpage.html'" style="position:absolute;top:400px;left:450px;">GO BACK</button>
+    <span style="font-size:20px;position:absolute;right:360px;color:white;top:10px;">EXPERT DETAILS</span>
+    <div class="content"><br>
+      <form name="maven" action="fetch.php" method="post">
+    
+      <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="off" required><br><br><br>
+    
+      <input type="email" id="email" name="emailid" placeholder="Enter your mail" autocomplete="off" required><br><br><br>
+      
+      <input type="text" id="password" name="phono" placeholder="Write your Phone number" autocomplete="off" required><br><br><br>
+      
+      <input type="text" id="code" name="profession" placeholder="What is your Profession?" autocomplete="off" required><br><br><br>
+      
+      <input type="text" id="date" name="skill" placeholder="Write skills" autocomplete="off" required><br><br><br>
+    
+      <input type="text" name="status" placeholder="Write status" autocomplete="off" required><br><br><br>
+      
+      <textarea name="exp" placeholder="Share your experience" autocomplete="off" required></textarea><br><br><br>
+      <select name="stream" required>
+        <option value="Subject"> Which Subject*</option>
+        <option value="pcm">PCM</option>
+        <option value="arts">ARTS</option>
+        <option value="bio">BIO</option>
+        <option value="commerce">COMMERCE</option>
+        <option value="others">OTHERS</option>
+      </select><br><br><Br>
+      <input type="checkbox" required>I agree to all the privacy policy of MAVEN.
+
+
+     
+      <input style="margin-left:170px;" type="submit"   value="Get Notified" name="notify">
+      
+      </div>
+
+     
+
+
+
+
+  </body>
+  <html>

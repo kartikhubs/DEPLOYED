@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objecting</title>
+</head>
+<body>
+	<form name="KARTIK" method="post">
+		<fieldset>
+			<legend><strong>FILL UPS</strong></legend>
+			<i>NAME:</i>
+			<input type="text" name="name" autocomplete="off" placeholder="Enter Your Name" required><br><br>
+			<i>COLLEGE:</i>
+			<input type="text" name="coll" autocomplete="off" placeholder="Enter Your College" required><br><br>
+			<button type="submit" onclick="Check()"><b style="font-weight:thick;">VALIDATE</b></button>
+		    
+	</fieldset></form>
+		<p id="demo"></p>
+    <script>
+    	function Check(){
+    		var x=document.forms['KARTIK']['name'].value;
+    	
+    		if(isNaN(x)){
+    			alert("It's a text entry");
+    		}
+    		else if(x==""){
+    			alert("It's an empty field");
+    		}
+    		
+    		else{
+    			alert("It's another type of entry");
+    		}
+    	}
+		</script>
+		
+	
+
+</body> 
+</html>
+

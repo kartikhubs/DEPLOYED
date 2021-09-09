@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BioLogy_Quiz!</title>
+</head>
+<style>
+  body{
+    font-family:Arial,Helvitica,sans-serif;
+    background-image:url("quiz.jpg");
+    background-size:cover;
+    background-attachment:scroll;
+  }
+  nav{
+    width:auto;
+    background-color:yellow;
+    color:black;
+    padding:7px 7px;
+    box-shadow:0px 5px 7px 5px grey;
+    text-align:left;
+    opacity:0.8;
+  }
+  a{
+    margin:7px;
+    text-decoration:none;
+    position:relative;
+    transition: font-size 0.3s;
+  }
+  a:hover{
+    text-decoration:none;
+    color:red;
+
+    transition-timing-function: ease-in;
+    transition-property: font-size;
+    font-size:25px;
+}
+input[type=submit]{
+  width:50px;
+  background-color:blue;
+  height:30px;
+  border:none;
+  outline:none;
+  color:white;
+  transition:0.2s background-color;
+  border-radius:4px;
+}
+input[type=submit]:hover{
+  background-color:green;
+
+  transition-timing-function:ease-in;
+}
+button{
+  width:60px;
+  background-color:red;
+  height:30px;
+  border:none;
+  outline:none;
+  color:white;
+  transition:0.2s background-color;
+  border-radius:4px;
+
+}
+button:hover{
+  background-color:yellow;
+  color:black;
+  transition-timing-function:ease-in;
+}
+</style>
+<body>
+  <nav>
+    <a href="consult1st.html" style="margin-left:250px;"><strong><i>MAVEN</i></strong></a>
+    <a href="about us.html" style="margin-left:250px;">About Us</a>
+    <a href="contact.html" style="margin-left:250px;">Contact Us</a>
+
+    <a href="logout.php" style="float:right;margin-right:17px;top:-5px;font-weight:bold;">LOG-OUT</a>
+  </nav><br>
+  <img src="maven2.png" width="90px" height="90px">
+  <p style="font-family:Lucida Console,Monospace;font-size:15px;color:black;">INCUBATING BRAINS</p><br>
+  <center><h3 style="position:absolute;top:60px;left:240px;">THIS IS JUST AN ASSESSMENT TO CHECK WHETHER YOU HAVE KNOWLEDGE OF PARTICULAR STREAM OR NOT?</h3></center>
+  <span style="top:150px;position:absolute;left:1350px;"><i><b>MIN MARKS:5</b></i></span>
+  <span style="top:200px;position:absolute;left:1350px;"><i><b>MAX TIME:1 min</b></i></span>
+
+  <p><b>1.The formula for exponential population growth is</B></P>
+  <input type="radio" id="name" name="choice">
+  <b>dt/dN = rN<b>
+  <br><br>
+  <input type="radio" id="name1" name="choice">
+  <b>DN/rN = dt<b><br><br>
+  <input type="radio" id="name2" name="choice">
+  <b>rN/dN = dt
+<b><br><br>
+  <input type="radio" id="name3" name="choice">
+  <b>dN/dt = rN<b><br><br>
+  <input type="submit" onclick="check()" value="submit">
+  <br>
+  <p>2.The two different species cannot live for long duration in the same niche or habitat. Which law is this?</p>
+  <input type="radio" id="ans" name="choice">
+  <b>Allen’s Law<b><br><br>
+  <input type="radio" id="ans1" name="choice">
+  <b>Mendel’s Law</b><br><br>
+  <input type="radio" id="ans2" name="choice">
+  <b>Gause’s competitive exclusion principle<b><br><br>
+  <input type="radio" id="ans3" name="choice">
+  <b>Weismann’s theory<b><br><br>
+  <input type="submit" onclick="check1()" value="submit">
+  <br>
+  <p>3.An association of individuals of different species living in the same habitat and having functional interactions is</P>
+  <input type="radio" id="a" name="choice">
+  <b>Ecological niche</b><br><br>
+  <input type="radio" id="a1" name="choice">
+  <b>Biotic community</b><br><br>
+  <input type="radio" id="a2" name="choice">
+  <b>Ecosystem</b><br><br>
+  <input type="radio" id="a3" name="choice">
+  <b>Population</B><br><br>
+  <input type="submit" onclick="check2()" value="submit">
+  <br>
+  <p>4.Which one of the following is one of the characteristics of a biological community?</P>
+  <input type="radio" id="z" name="choice">
+  <b>Stratification<b><br><br>
+  <input type="radio" id="z1" name="choice">
+  <b>Natality<b><br><br>
+  <input type="radio" id="z2" name="choice">
+  <b>Morality<b><br><br>
+  <input type="radio" id="z3" name="choice">
+  <b>Sex-ratio<b><br><br>
+  <input type="submit" onclick="check3()" value="submit">
+  <br>
+  <p>5.Which of the glands is often referred in relation with AIDS?</p>
+  <input type="radio" id="w" name="choice">
+  <b>Thyroid<b><br><br>
+  <input type="radio" id="w1" name="choice">
+  <b>Adrenal<b><br><br>
+  <input type="radio" id="w2" name="choice">
+  <b>Thymus<b><br><br>
+  <input type="radio" id="w3" name="choice">
+  <b>Pancreas<b><br><br>
+  <input type="submit" onclick="check4()" value="submit"><br>
+  <p>6.AIDS spreads through:</p>
+  <input type="radio" id="f" name="choice">
+  <b>Immoral way of life<b><br><br>
+  <input type="radio" id="f1" name="choice">
+  <b>Infected needles and syringes<b><br><br>
+  <input type="radio" id="f2" name="choice">
+  <b>Homosexuality<b><br><br>
+  <input type="radio" id="f3" name="choice">
+  <b>All of the above<b><br><br>
+  <input type="submit" onclick="check5()" value="submit"><br>
+  <p>7.Vegetative Propagation Is Found IN</p>
+  <input type="radio" id="g" name="choice">
+  <b>Planaria<b><br><br>
+  <input type="radio" id="g1" name="choice">
+  <b>Amoeba<b><br><br>
+  <input type="radio" id="g2" name="choice">
+  <b>Penicillium<b><br><br>
+  <input type="radio" id="g3" name="choice">
+  <b>Hervaceous Plants<b><br><br>
+  <input type="submit" onclick="check6()" value="submit"><br>
+  <p>8.What Is The Most Found Blood Type?</p>
+  <input type="radio" id="h" name="choice">
+  <b>O<b><br><br>
+  <input type="radio" id="h1" name="choice">
+  <b>A<b><br><br>
+  <input type="radio" id="h2" name="choice">
+  <b>B<b><br><br>
+  <input type="radio" id="h3" name="choice">
+  <b>AB<b><br><br>
+  <input type="submit" onclick="check7()" value="submit"><br>
+  <p>9.What Is The Biological Name Of Pea?</p>
+  <input type="radio" id="u" name="choice">
+  <b>Pisum-Sativum<b><br><br>
+  <input type="radio" id="u1" name="choice">
+  <b>Boom Baam<b><br><br>
+  <input type="radio" id="u2" name="choice">
+  <b>Recknoas <b><br><br>
+  <input type="radio" id="u3" name="choice">
+  <b>Lurker<b><br><br>
+  <input type="submit" onclick="check8()" value="submit"><br>
+  <p>10.How Many Chambers In Human Heart?</p>
+  <input type="radio" id="i" name="choice">
+  <b>1<b><br><br>
+  <input type="radio" id="i1" name="choice">
+  <b>2<b><br><br>
+  <input type="radio" id="i2" name="choice">
+  <b>3<b><br><br>
+  <input type="radio" id="i3" name="choice">
+  <b>4<b><br><br>
+  <input type="submit" onclick="check9()" value="submit"><br>
+  <center><button onclick="analyze()">CHECK</button></center>
+
+
+  <script>
+    var count1=0;
+    var count2=0;
+    var count3=0;
+    var count4=0;
+    var count5=0;
+    var count6=0;
+    var count7=0;
+    var count8=0;
+    var count9=0;
+    var count10=0;
+    var time=setInterval(mytime,60000);
+    function mytime(){
+      alert("Time over, you didn't complete the assessment in required time limit");
+      window.location.href="expertpage.html";
+    }
+    function check(){
+      if(document.getElementById("name3").checked){
+
+        count1=1;
+      }
+      else{
+
+        count1=0;
+      }
+    }
+    function check1(){
+      if(document.getElementById("ans2").checked){
+        count2=1;
+      }
+
+    else{
+      count2=0;
+    }
+  }
+  function check2(){
+    if(document.getElementById("a1").checked){
+      count3=1;
+    }
+
+  else{
+    count3=0;
+  }
+}
+function check3(){
+  if(document.getElementById("z").checked){
+    count4=1;
+  }
+
+else{
+ count4=0;
+}
+}
+function check4(){
+  if(document.getElementById("w2").checked){
+    count5=1;
+  }
+
+else{
+  count5=0;
+}
+}
+function check5(){
+  if(document.getElementById("f3").checked){
+    count6=1;
+  }
+
+else{
+  count6=0;
+}
+}
+function check6(){
+  if(document.getElementById("g3").checked){
+    count7=1;
+  }
+
+else{
+  count7=0;
+}
+}
+function check7(){
+  if(document.getElementById("h").checked){
+    count8=1;
+  }
+
+else{
+  count8=0;
+}
+}
+function check8(){
+  if(document.getElementById("u").checked){
+    count9=1;
+  }
+
+else{
+  count9=0;
+}
+}
+function check9(){
+  if(document.getElementById("i3").checked){
+    count10=1;
+  }
+
+else{
+  count10=0;
+}
+}
+function analyze(){
+
+var x=count1+count2+count3+count4+count5+count6+count7+count8+count9+count10;
+if(x<5){
+  alert("Sorry, you didn't score even 50%, retake the test");
+  window.location.href="expertpage.html";
+}
+else{
+  alert("You have cleared the test");
+  window.location.href="Form3.html";
+}}
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+catalog{
+	background-color:cyan;
+	font-family:Times New Roman,serif;
+}
+CD{
+	background-color:purple;
+	font-family:Arial,Helvitica,sans-serif;
+	display:block;
+}
+name,country,work{
+	background-color:red;
+	display:block;
+}

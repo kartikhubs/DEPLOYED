@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SECTION</title>
+</head>
+<body>
+	<h2>INSERT FRUITS</h2>
+	<form name="kartik">
+	<strong>ENTER FRUIT:</strong>
+	<input type="text" id="fruit" autocomplete="off" required><br><br>
+	<button onclick="change()">ALERT HIM</button></form>
+	<script>
+		function change(){
+			var x=document.kartik.fruit.value;
+			if(x!='banana' or x!='apple') {
+				alert("NEITHER");
+			}
+			else{
+				alert("OKAY");
+			}
+		}
+    </script> 
+</body> 
+</html>
