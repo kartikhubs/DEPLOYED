@@ -1,0 +1,11 @@
+type Query{
+    repos: [Repos]
+}
+
+type Repos{
+    node_id: String
+    name: String
+}
+type Mutation{
+    addRepo(node_id: String, name: String): String
+}
